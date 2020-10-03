@@ -11,11 +11,12 @@ $get_services = get_services($con,'','',$service_id);
                         <div class="col-xs-12">
                             <div class="bradcaump__inner">
                                 <nav class="bradcaump-inner">
-                                  <a class="breadcrumb-item" href="index.html">Home</a>
+                                  <a class="breadcrumb-item" href="index.php">Home</a>
                                   <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
-                                  <a class="breadcrumb-item" href="product-grid.html">Products</a>
+                                  <a class="breadcrumb-item" href="categories.php?id=<?php echo $get_services['0']['categories_id'] ?>">
+                                    <?php echo $get_services['0']['categories'] ?></a>
                                   <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
-                                  <span class="breadcrumb-item active">ean shirt</span>
+                                  <span class="breadcrumb-item active"><?php echo $get_services['0']['name'] ?></span>
                                 </nav>
                             </div>
                         </div>
@@ -51,7 +52,7 @@ $get_services = get_services($con,'','',$service_id);
                                     <li class="old__prize"><?php echo $get_services['0']['unit_price'] ?></li>
                                     <li><?php echo $get_services['0']['total_price'] ?></li>
                                 </ul>
-                                <p class="pro__info"><?php echo $get_services['0']['descpt'] ?></p>
+                                <p class="pro__info"><?php echo $get_services['0']['short_desc'] ?></p>
                                 <div class="ht__pro__desc">
                                     <div class="sin__desc">
                                         <p><span>Availability:</span> In Stock</p>
