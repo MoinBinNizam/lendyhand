@@ -1,5 +1,4 @@
 <?php
-
 require('top.php');
 
 ?>
@@ -40,7 +39,7 @@ require('top.php');
                                         <h2>collection 2018</h2>
                                         <h1>NICE CHAIR</h1>
                                         <div class="cr__btn">
-                                            <a href="cart.html">Shop Now</a>
+                                            <a href="cart.php">Shop Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -63,16 +62,17 @@ require('top.php');
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="section__title--2 text-center">
-                            <h2 class="title__line">New Arrivals</h2>
+                            <h2 class="title__line">New Arrivals Services</h2>
                             <p>But I must explain to you how all this mistaken idea</p>
                         </div>
                     </div>
                 </div>
                 <div class="htc__product__container">
-                    <div cl ass="row">
+                    <div class="row">
                         <div class="product__list clearfix mt--30">
                              <?php
-                             $get_services = get_services($con,3);
+
+                             $get_services = get_services($con,4);
                             foreach($get_services as $list){
 
                            
@@ -87,7 +87,7 @@ require('top.php');
                                         </a>
                                     </div>
                                     <div class="fr__product__inner">
-                                        <h4><a href="product-details.html"><?php echo $list['name'] ?></a></h4>
+                                        <h4><a href="services.php"><?php echo $list['name'] ?></a></h4>
                                         <ul class="fr__pro__prize">
                                             <li class="old__prize"><?php echo $list['unit_price'] ?></li>
                                             <li><?php echo $list['total_price'] ?></li>

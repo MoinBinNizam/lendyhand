@@ -8,8 +8,14 @@ function prx($arr){
     print_r($arr);
     die();
 }
+function get_safe_value($con,$str){
+    if($str != ''){
+        $str=trim($str);
+        return mysqli_real_escape_string ($con, $str);
+    }
+}
 function get_services($con,$limit='',$cat_id='',$service_id=''){
-    $sql="select services.*,categories.categories from services,categories where services.status=1 and services.categories_id=$cat_id and services.id and services.categories_id=categories.id order by services.id desc " ; 
+    $sql="select services.*,categories.categories from services,categories where services.status=1 ";
 	if($cat_id!=''){
 		$sql.=" and services.categories_id=$cat_id ";
     }
@@ -19,7 +25,8 @@ function get_services($con,$limit='',$cat_id='',$service_id=''){
     $sql.=" and services.categories_id=categories.id ";
 	$sql.=" order by services.id desc";
     if($limit!=''){
-        $sql.=" services.limit $limit";
+        $sql.=" limit $limit";
+
     }
     $res=mysqli_query($con,$sql);
     $data=array();
@@ -28,5 +35,6 @@ function get_services($con,$limit='',$cat_id='',$service_id=''){
     }
     return $data;
 }
+
 
 ?>

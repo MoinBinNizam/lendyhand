@@ -6,6 +6,13 @@ $cat_array=array();
 while($row=mysqli_fetch_assoc($cat_res)){
     $cat_array[]=$row;
 }
+//if(isset($_SESSION['submit']) && $_SESSION['submit'] !=''){
+//
+//}else{
+//    header('location: contacts.php');
+//    die();
+//}
+
 
 ?>
 
@@ -54,7 +61,7 @@ while($row=mysqli_fetch_assoc($cat_res)){
                             <?php
                                 }
                             ?>   
-							<li><a href="contact.php">Contact</a></li>
+							<li><a href="contacts.php">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="mobile-menu clearfix visible-xs visible-sm">
@@ -69,7 +76,7 @@ while($row=mysqli_fetch_assoc($cat_res)){
                             <?php
                                 }
                             ?>
-							<li><a href="contact.php">Contact</a></li>
+							<li><a href="contacts.php">Contact</a></li>
                             </ul>
                         </nav>
                     </div>  

@@ -20,13 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eec7b99-ccd8-4d40-b24f-5b17283cbe62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/001085620.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contacts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/send_message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/top.php" beforeDir="false" afterPath="$PROJECT_DIR$/top.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,19 +44,38 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1iLgupJ8VxfKF1Rvgwkb3f7sgdD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../php/php.exe" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.hello.php">
+    <configuration name="hello.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/001085620/hello.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="top.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/top.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.top.php" />
+        <item itemvalue="JavaScript Debug.hello.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -62,7 +86,21 @@
       <option name="presentableId" value="Default" />
       <updated>1601692511666</updated>
       <workItem from="1601692513216" duration="6379000" />
+      <workItem from="1601732715530" duration="153000" />
+      <workItem from="1601733340531" duration="15566000" />
+      <workItem from="1602426848528" duration="11475000" />
+      <workItem from="1602523474821" duration="3038000" />
+      <workItem from="1602783480173" duration="860000" />
+      <workItem from="1603116655912" duration="11748000" />
     </task>
+    <task id="LOCAL-00001" summary="js added">
+      <created>1601898021879</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601898021879</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,15 +116,67 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="js added" />
+    <option name="LAST_COMMIT_MESSAGE" value="js added" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="160" y="0" key="#CLI_Interpreters" timestamp="1603129993462">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="160" y="0" key="#CLI_Interpreters/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603129993462" />
+    <state x="310" y="0" key="#PHP" timestamp="1603130007192">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="310" y="0" key="#PHP/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603130007192" />
+    <state x="489" y="2" key="FileChooserDialogImpl" timestamp="1603129975947">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="489" y="2" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603129975947" />
+    <state x="2053" y="197" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1601732796691" />
+    <state width="1311" height="163" key="GridCell.Tab.0.bottom" timestamp="1603130303517">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603130303517" />
+    <state width="1311" height="163" key="GridCell.Tab.0.center" timestamp="1603130303516">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="163" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603130303516" />
+    <state width="1311" height="163" key="GridCell.Tab.0.left" timestamp="1603130303516">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="163" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603130303516" />
+    <state width="1311" height="163" key="GridCell.Tab.0.right" timestamp="1603130303516">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="163" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603130303516" />
+    <state x="532" y="297" key="NewPhpFileDialog" timestamp="1603130214727">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="532" y="297" key="NewPhpFileDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603130214727" />
+    <state x="2114" y="424" key="NewPhpFileDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1601897251887" />
     <state x="1738" y="150" key="SettingsEditor" timestamp="1601693191619">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="1738" y="150" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1601693191619" />
-    <state x="346" y="49" key="search.everywhere.popup" timestamp="1601708175635">
+    <state x="2094" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601897967742">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2094" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1601897967742" />
+    <state x="0" y="0" width="716" height="740" key="find.popup" timestamp="1603130364378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1601708175635" />
+    <state x="0" y="0" width="716" height="740" key="find.popup/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603130364378" />
+    <state x="255" y="159" key="run.anything.popup" timestamp="1603268516534">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="255" y="159" key="run.anything.popup/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603268516534" />
+    <state x="346" y="49" width="840" height="1034" key="search.everywhere.popup" timestamp="1603130328010">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="840" height="1034" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603130328010" />
   </component>
 </project>
