@@ -1,26 +1,8 @@
 <?php
 require('top.php');
-//require('functions.inc.php');
-//if(isset($_POST['send_msg'])){
-    //na
-//    $name =strip_tags($_POST['name']);//remove html tags
-//    $name =str_replace(' ','',$name);//remove space
-//    $name =ucfirst(strtolower($name));//Uppercase first letter
-//    //email
-//    $email =strip_tags($_POST['email']);//remove html tags
-//    $email =str_replace(' ','',$email);//remove space
-//    //Mobile
-//    $mobile =strip_tags($_POST['mobile']);//remove html tags
-//    $mobile =str_replace(' ','',$mobile);//remove space
-//    //comment
-//    $comment =strip_tags($_POST['comment']);//remove html tags
-//    //$comment =str_replace(' ','',$comment);//remove space
-//    //$comment =ucfirst(strtolower($comment));//Uppercase first letter
-//    echo "Your messege sent to us successfully";
-//}
-// Define variables and set to empty values
-$name_error = $email_error = $phone_error = $comment_error= "";
-$name= $email = $phone =$comment = "";
+
+$name_error = $email_error = $mobile_error = $comment_error= "";
+$name= $email = $mobile =$comment = "";
 
 //form submission
 if ($_SERVER["REQUEST_METHOD"] =="POST"){
@@ -34,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] =="POST"){
         }
     }
     if(empty($_POST["email"])){
-        $name_error ="Email is required";
+        $email_error ="Email is required";
     }else{
         $email = test_input($_POST['email']);
         //check if email address is well formed
@@ -42,20 +24,19 @@ if ($_SERVER["REQUEST_METHOD"] =="POST"){
             $email_error = "Invalid email format";
         }
     }
-    if(empty($_POST["phone"])){
-        $phone_error ="Phone is required";
+    if(empty($_POST["mobile"])){
+        $mobile_error ="Mobile number is required";
     }else{
-        $phone = test_input($_POST['phone']);
+        $mobile = test_input($_POST['mobile']);
         //check if phone number is well formed
-        if (!preg_match("/^(\d[\s-]?)?[\(\[\s-]{0,2}?\d{3}[\)\]\s-]{0,2}?\d{3}[\s-]?\d{4}$/i",$phone)){
-            $phone_error = "Invalid phone number";
+        if (!preg_match("/^(\d[\s-]?)?[\(\[\s-]{0,2}?\d{3}[\)\]\s-]{0,2}?\d{3}[\s-]?\d{4}$/i",$mobile)) {
+            $mobile_error = "Invalid mobile number";
         }
-    }
+        }
     if(empty($_POST['comment'])){
         $comment = "";
     }else{
-        $phone = test_input($_POST['comment']);
-
+        $comment = test_input($_POST['comment']);
     }
 }
 function test_input($data){
@@ -132,14 +113,13 @@ function test_input($data){
                                         <span class="error"><?php $name_error ?></span>
                                         <input type="email" id="email" name="email" placeholder="Email*" value="<?php $email ?>">
                                         <span class="error"><?php $email_error ?></span>
-                                        <input type="text" id="mobile" name="phone" placeholder="Mobile*" value="<?php $phone ?>">
-                                        <span class="error"><?php $phone_error ?></span>
+                                        <input type="text" id="mobile" name="mobile" placeholder="Mobile*" value="<?php $mobile?>">
+                                        <span class="error"><?php $mobile_error ?></span>
                                     </div>
                                 </div>
                                 <div class="single-contact-form">
                                     <div class="contact-box message">
                                         <textarea name="comment" id="comment" placeholder="Your Comment" value="<?php $comment ?>"></textarea>
-
                                     </div>
                                 </div>
                                 <div class="contact-btn">
