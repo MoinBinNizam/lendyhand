@@ -25,9 +25,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7eec7b99-ccd8-4d40-b24f-5b17283cbe62" name="Default Changelist" comment="js added">
+    <list default="true" id="7eec7b99-ccd8-4d40-b24f-5b17283cbe62" name="Default Changelist" comment="new file added">
+      <change afterPath="$PROJECT_DIR$/contacts -copy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/send_message.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/send_message.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +93,7 @@
       <workItem from="1602426848528" duration="11475000" />
       <workItem from="1602523474821" duration="3038000" />
       <workItem from="1602783480173" duration="860000" />
-      <workItem from="1603116655912" duration="17485000" />
+      <workItem from="1603116655912" duration="49508000" />
     </task>
     <task id="LOCAL-00001" summary="js added">
       <created>1601898021879</created>
@@ -110,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603374466258</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new file added">
+      <created>1603375486102</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603375486102</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +144,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="js added" />
-    <option name="LAST_COMMIT_MESSAGE" value="js added" />
+    <MESSAGE value="new file added" />
+    <option name="LAST_COMMIT_MESSAGE" value="new file added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="160" y="0" key="#CLI_Interpreters" timestamp="1603129993462">
@@ -167,11 +181,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1311" height="163" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603130303516" />
-    <state x="532" y="297" key="NewPhpFileDialog" timestamp="1603130214727">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="2114" y="424" key="NewPhpFileDialog" timestamp="1603541841991">
+      <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="532" y="297" key="NewPhpFileDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603130214727" />
-    <state x="2114" y="424" key="NewPhpFileDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1601897251887" />
+    <state x="2114" y="424" key="NewPhpFileDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1603541841991" />
     <state x="1738" y="150" key="SettingsEditor" timestamp="1601693191619">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
@@ -180,10 +194,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="175" y="31" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603375295107" />
-    <state x="2094" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601897967742">
+    <state x="2094" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603553066624">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
-    <state x="2094" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1601897967742" />
+    <state x="2094" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1603553066624" />
     <state x="0" y="0" width="716" height="740" key="find.popup" timestamp="1603130364378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -1,52 +1,77 @@
 <?php
+//require ('connection.inc.php');
 require('top.php');
+//PHP Save Form Data into Database and Send Email to Admin using GMAIL SMTP | With AJAX
+$msg="";
+if(isset($_POST['submit'])){
+    $name=mysqli_real_escape_string($con, $_POST['name']);
+    $email=mysqli_real_escape_string($con, $_POST['email']);
+    $mobile=mysqli_real_escape_string($con, $_POST['mobile']);
+    $message=mysqli_real_escape_string($con, $_POST['message']);
 
-$name_error = $email_error = $mobile_error = $comment_error= "";
-$name= $email = $mobile =$comment = "";
+    mysqli_query("insert into contact_us(name,email,mobile,message) values ('$name','$email','$mobile','$message')");
+    $msg="Thank you";
 
-//form submission
-if ($_SERVER["REQUEST_METHOD"] =="POST"){
-    if(empty($_POST["name"])){
-        $name_error ="Name is required";
-    }else{
-        $name = test_input($_POST['name']);
-        //check if name only contains letters and whitespaces
-        if (!preg_match("/^[a-zA-Z ]*$/",$name)){
-            $name_error = "Only letters and white space allowed";
-        }
-    }
-    if(empty($_POST["email"])){
-        $email_error ="Email is required";
-    }else{
-        $email = test_input($_POST['email']);
-        //check if email address is well formed
-        if (!filter_var($email,FILTER_VALIDATE_EMAIL)){
-            $email_error = "Invalid email format";
-        }
-    }
-    if(empty($_POST["mobile"])){
-        $mobile_error ="Mobile number is required";
-    }else{
-        $mobile = test_input($_POST['mobile']);
-        //check if phone number is well formed
-        if (!preg_match("/^(\d[\s-]?)?[\(\[\s-]{0,2}?\d{3}[\)\]\s-]{0,2}?\d{3}[\s-]?\d{4}$/i",$mobile)) {
-            $mobile_error = "Invalid mobile number";
-        }
-        }
-    if(empty($_POST['comment'])){
-        $comment = "";
-    }else{
-        $comment = test_input($_POST['comment']);
-    }
+
 }
-function test_input($data){
-    $data   = trim($data);
-    $data   = stripslashes($data);
-    $data   = htmlspecialchars($data);
-    return $data;
-}
-
-
+////default variables and set to empty values
+//$name_error = $email_error = $mobile_error = $comment_error= "";
+//$name= $email = $mobile =$comment = "";
+//
+////form submitted with post method
+//if ($_SERVER["REQUEST_METHOD"] =="POST"){
+//    if(empty($_POST["name"])){
+//        $name_error ="Name is required";
+//    }else{
+//        $name = test_input($_POST['name']);
+//        //check if name only contains letters and whitespaces
+//        if (!preg_match("/^[a-zA-Z-' ]*$/",$name)){
+//            $name_error = "Only letters and white spaces are allowed";
+//        }
+//    }
+//    if(empty($_POST["email"])){
+//        $email_error ="Email is required";
+//    }else{
+//        $email = test_input($_POST['email']);
+//        //check if email address is well formed
+//        if (!filter_var($email,FILTER_VALIDATE_EMAIL)){
+//            $email_error = "Invalid email format";
+//        }
+//    }
+//    if(empty($_POST["mobile"])){
+//        $mobile_error ="Mobile number is required";
+//    }else{
+//        $mobile = test_input($_POST['mobile']);
+//        //check if phone number is well formed
+//        if (!preg_match("/^(\d[\s-]?)?[\(\[\s-]{0,2}?\d{3}[\)\]\s-]{0,2}?\d{3}[\s-]?\d{4}$/i",$mobile)) {
+//            $mobile_error = "Invalid mobile number";
+//        }
+//        }
+//    if(empty($_POST['comment'])){
+//        $comment = "Input your comment";
+//    }else{
+//        $comment = test_input($_POST['comment']);
+//    }
+////    if($name_error =='' and $email_error =='' and  $mobile_error =='' ){
+////        $message_body = '';
+////        unset($_POST['submit']);
+////        foreach ($_POST as $key => $value){
+////            $message_body .= "$key: $value \n";
+////        }
+////    }
+////    $to = 'moinuddinpkt@gmail.com';
+////    $subject= 'Contact Form Subject';
+////    if(mail($to,$subject,$message_body)) {
+////    $success = "Message sent, thank you for contacting us!";
+////    $name = $email = $mobile = $comment ='';
+////    }
+//}
+//function test_input($data){
+//    $data   = trim($data);
+//    $data   = stripslashes($data);
+//    $data   = htmlspecialchars($data);
+//    return $data;
+//}
 ?>
 <!-- Start Bradcaump area -->
         <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat scroll center center / cover ;">
@@ -56,7 +81,7 @@ function test_input($data){
                         <div class="col-xs-12">
                             <div class="bradcaump__inner">
                                 <nav class="bradcaump-inner">
-                                  <a class="breadcrumb-item" href="index.html">Home</a>
+                                  <a class="breadcrumb-item" href="index.php">Home</a>
                                   <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
                                   <span class="breadcrumb-item active">Contact Us</span>
                                 </nav>
@@ -106,25 +131,22 @@ function test_input($data){
                             </div>
                         </div>
                         <div class="col-xs-12">
-                            <form id="contact-form" action="<?php $_SERVER['PHP_SELF'];?>" method="post">
+                            <form id="contact-form" action="#" method="post">
                                 <div class="single-contact-form">
                                     <div class="contact-box name">
-                                        <input type="text" id="name" name="name" placeholder="Your Name*" value="<?php $name ?>">
-                                        <span class="error"><?php $name_error ?></span>
-                                        <input type="email" id="email" name="email" placeholder="Email*" value="<?php $email ?>">
-                                        <span class="error"><?php $email_error ?></span>
-                                        <input type="text" id="mobile" name="mobile" placeholder="Mobile*" value="<?php $mobile?>">
-                                        <span class="error"><?php $mobile_error ?></span>
+                                        <input type="text" id="name" name="name" placeholder="Your Name*">
+                                        <input type="email" id="email" name="email" placeholder="Email*">
+                                        <input type="text" id="mobile" name="mobile" placeholder="Mobile*">
                                     </div>
                                 </div>
                                 <div class="single-contact-form">
                                     <div class="contact-box message">
-                                        <textarea name="comment" id="comment" placeholder="Your Comment" value="<?php $comment ?>"></textarea>
+                                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
                                     </div>
                                 </div>
                                 <div class="contact-btn">
-                                    <button type="submit" class="fv-btn" name="send_msg">Send Messege</button>
-                                </div> 
+                                    <button type="button" onclick="send_message" class="fv-btn">Send MESSAGE</button>
+                                </div>
                             </form>
                             <div class="form-output">
                                 <p class="form-messege"></p>
@@ -139,8 +161,8 @@ function test_input($data){
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmGmeot5jcjdaJTvfCmQPfzeoG_pABeWo "></script>
 		<script src="js/contact-map.js"></script>
 		<script>
-			// When the window has finished loading create our google map below
-        google.maps.event.addDomListener(window, 'load', init);
+		 	// When the window has finished loading create our google map below
+         google.maps.event.addDomListener(window, 'load', init);
 
         function init() {
             // Basic options for a simple Google Map
@@ -154,9 +176,9 @@ function test_input($data){
                 // The latitude and longitude to center the map (always required)
                 center: new google.maps.LatLng(23.7286, 90.3854), // New York
 
-                // How you would like to style the map. 
+                // How you would like to style the map.
                 // This is where you would paste any style found on Snazzy Maps.
-                 styles: 
+                 styles:
         [ {
                 "featureType": "all",
                 "elementType": "labels.text.fill",
@@ -325,7 +347,7 @@ function test_input($data){
         ]
             };
 
-            // Get the HTML DOM element that will contain your map 
+            // Get the HTML DOM element that will contain your map
             // We are using a div with id="map" seen below in the <body>
             var mapElement = document.getElementById('googleMap');
 
@@ -342,7 +364,7 @@ function test_input($data){
 
             });
         }
-    </script>		
+    </script>
 <?php
 require('footer.php');
 

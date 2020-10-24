@@ -2819,6 +2819,8 @@ a.shipping-calculator-button:hover{
 }
 .single-contact-form + .single-contact-form {
     margin-top: 30px;
+    color: #FF333F;
+
 }
 
 .contact-box.message textarea {
@@ -3561,6 +3563,14 @@ ul.htc__instagram__posts.owl-carousel li img {
 .slick-initialized .slick-slide {
     outline: none;
 }
-
+.error{
+    color:red;
+}
+.success{
+    color:green;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 
