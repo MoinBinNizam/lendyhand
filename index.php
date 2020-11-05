@@ -15,7 +15,7 @@ require('top.php');
                                         <h2>collection 2018</h2>
                                         <h1>NICE CHAIR</h1>
                                         <div class="cr__btn">
-                                            <a href="cart.html">Shop Now</a>
+                                            <a href="cart.php">Shop Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -67,9 +67,9 @@ require('top.php');
                         </div>
                     </div>
                 </div>
-                <div class="htc__product__container">
+                <div class="htc__service__container">
                     <div class="row">
-                        <div class="product__list clearfix mt--30">
+                        <div class="service__list clearfix mt--30">
                              <?php
 
                              $get_services = get_services($con,4);
@@ -83,10 +83,10 @@ require('top.php');
                                 <div class="category">
                                     <div class="ht__cat__thumb">
                                         <a href="services.php?id=<?php echo $list['id'] ?>">
-                                            <img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['img'] ?>" alt="Service images">
+                                            <img src="<?php echo SERVICE_IMAGE_SITE_PATH.$list['img'] ?>" alt="Service images">
                                         </a>
                                     </div>
-                                    <div class="fr__product__inner">
+                                    <div class="fr__service__inner">
                                         <h4><a href="services.php"><?php echo $list['name'] ?></a></h4>
                                         <ul class="fr__pro__prize">
                                             <li class="old__prize"><?php echo $list['unit_price'] ?></li>
@@ -103,8 +103,8 @@ require('top.php');
             </div>
         </section>
         <!-- End Category Area -->
-        <!-- Start Product Area -->
-        <section class="ftr__product__area ptb--100">
+        <!-- Start service Area -->
+        <section class="ftr__service__area ptb--100">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
@@ -115,25 +115,25 @@ require('top.php');
                     </div>
                 </div>
                 <div class="row">
-                    <div class="product__wrap clearfix">
+                    <div class="service__wrap clearfix">
                         <!-- Start Single Category -->
                         <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                             <div class="category">
                                 <div class="ht__cat__thumb">
                                     <a href="product-details.html">
-                                        <img src="images/product/9.jpg" alt="product images">
+                                        <img src="images/product/9.jpg" alt="service images">
                                     </a>
                                 </div>
                                 <div class="fr__hover__info">
-                                    <ul class="product__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+                                    <ul class="service__action">
+                                        <li><a href="product.html"><i class="icon-heart icons"></i></a></li>
 
                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
 
                                         <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
                                     </ul>
                                 </div>
-                                <div class="fr__product__inner">
+                                <div class="fr__service__inner">
                                     <h4><a href="product-details.html">Special Wood Basket</a></h4>
                                     <ul class="fr__pro__prize">
                                         <li class="old__prize">$30.3</li>
@@ -147,12 +147,12 @@ require('top.php');
                         <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                             <div class="category">
                                 <div class="ht__cat__thumb">
-                                    <a href="product-details.html">
-                                        <img src="images/product/10.jpg" alt="product images">
+                                    <a href="service-details.html">
+                                        <img src="images/product/10.jpg" alt="service images">
                                     </a>
                                 </div>
                                 <div class="fr__hover__info">
-                                    <ul class="product__action">
+                                    <ul class="service__action">
                                         <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
 
                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
@@ -160,7 +160,7 @@ require('top.php');
                                         <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
                                     </ul>
                                 </div>
-                                <div class="fr__product__inner">
+                                <div class="fr__service__inner">
                                     <h4><a href="product-details.html">voluptatem accusantium</a></h4>
                                     <ul class="fr__pro__prize">
                                         <li class="old__prize">$30.3</li>
@@ -175,11 +175,11 @@ require('top.php');
                             <div class="category">
                                 <div class="ht__cat__thumb">
                                     <a href="product-details.html">
-                                        <img src="images/product/11.jpg" alt="product images">
+                                        <img src="images/product/11.jpg" alt="service images">
                                     </a>
                                 </div>
                                 <div class="fr__hover__info">
-                                    <ul class="product__action">
+                                    <ul class="service__action">
                                         <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
 
                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
@@ -187,8 +187,8 @@ require('top.php');
                                         <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
                                     </ul>
                                 </div>
-                                <div class="fr__product__inner">
-                                    <h4><a href="product-details.html">Product Dummy Name</a></h4>
+                                <div class="fr__service__inner">
+                                    <h4><a href="product-details.html">service Dummy Name</a></h4>
                                     <ul class="fr__pro__prize">
                                         <li class="old__prize">$30.3</li>
                                         <li>$25.9</li>
@@ -201,12 +201,12 @@ require('top.php');
                         <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                             <div class="category">
                                 <div class="ht__cat__thumb">
-                                    <a href="product-details.html">
-                                        <img src="images/product/12.jpg" alt="product images">
+                                    <a href="service-details.html">
+                                        <img src="images/product/12.jpg" alt="service images">
                                     </a>
                                 </div>
                                 <div class="fr__hover__info">
-                                    <ul class="product__action">
+                                    <ul class="service__action">
                                         <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
 
                                         <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
@@ -214,8 +214,8 @@ require('top.php');
                                         <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
                                     </ul>
                                 </div>
-                                <div class="fr__product__inner">
-                                    <h4><a href="product-details.html">Product Title Here </a></h4>
+                                <div class="fr__service__inner">
+                                    <h4><a href="product-details.html">service Title Here </a></h4>
                                     <ul class="fr__pro__prize">
                                         <li class="old__prize">$30.3</li>
                                         <li>$25.9</li>
@@ -228,7 +228,7 @@ require('top.php');
                 </div>
             </div>
         </section>
-        <!-- End Product Area -->
+        <!-- End service Area -->
 <?php
 
 require('footer.php');

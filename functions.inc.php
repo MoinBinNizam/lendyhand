@@ -16,14 +16,14 @@ function get_safe_value($con,$str){
 }
 function get_services($con,$limit='',$cat_id='',$service_id=''){
     $sql="select services.*,categories.categories from services,categories where services.status=1 ";
-	if($cat_id!=''){
-		$sql.=" and services.categories_id=$cat_id ";
+    if($cat_id!=''){
+        $sql.=" and services.categories_id=$cat_id ";
     }
-	if($service_id!=''){
-		$sql.=" and services.id=$service_id ";
+    if($service_id!=''){
+        $sql.=" and services.id=$service_id ";
     }
     $sql.=" and services.categories_id=categories.id ";
-	$sql.=" order by services.id desc";
+    $sql.=" order by services.id desc";
     if($limit!=''){
         $sql.=" limit $limit";
 
@@ -35,6 +35,5 @@ function get_services($con,$limit='',$cat_id='',$service_id=''){
     }
     return $data;
 }
-
 
 ?>

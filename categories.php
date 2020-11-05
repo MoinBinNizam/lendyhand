@@ -24,14 +24,14 @@ $get_services = get_services($con,'',$cat_id);
             </div>
         </div>
         <!-- End Bradcaump area -->
-        <!-- Start Product Grid -->
-        <section class="htc__product__grid bg__white ptb--100">
+        <!-- Start service Grid -->
+        <section class="htc__service__grid bg__white ptb--100">
             <div class="container">
                 <div class="row">
 				<?php if(count ($get_services)>0){?>
 					
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="htc__product__rightidebar">
+                        <div class="htc__service__rightidebar">
                             <div class="htc__grid__top">
                                 <div class="htc__select__option">
                                     <select class="ht__select">
@@ -42,7 +42,7 @@ $get_services = get_services($con,'',$cat_id);
                                     </select>
                                 </div>
                             </div>
-                            <!-- Start Product View -->
+                            <!-- Start service View -->
                             <div class="row">
                                 <div class="shop__grid__view__wrap">
                                     <div role="tabpanel" id="grid-view" class="single-grid-view tab-pane fade in active clearfix">
@@ -57,11 +57,11 @@ $get_services = get_services($con,'',$cat_id);
 								<div class="category">
 									<div class="ht__cat__thumb">
 										<a href="services.php?id=<?php echo $list['id'] ?>">
-                                            <img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['img'] ?>" alt="Service images">
+                                            <img src="<?php echo SERVICE_IMAGE_SITE_PATH.$list['img'] ?>" alt="Service images">
                                         </a>
                                     </div>
-                                    <div class="fr__product__inner">
-                                        <h4><a href="product-details.html"><?php echo $list['name'] ?></a></h4>
+                                    <div class="fr__service__inner">
+                                        <h4><a href="service-details.html"><?php echo $list['name'] ?></a></h4>
                                         <ul class="fr__pro__prize">
                                             <li class="old__prize"><?php echo $list['unit_price'] ?></li>
                                             <li><?php echo $list['total_price'] ?></li>
@@ -73,7 +73,7 @@ $get_services = get_services($con,'',$cat_id);
                             <?php } ?>
                                     </div>
                             </div>
-                            <!-- End Product View -->
+                            <!-- End service View -->
                         </div>
                         
                     </div>
@@ -83,7 +83,7 @@ $get_services = get_services($con,'',$cat_id);
                 </div>
             </div>
         </section>
-        <!-- End Product Grid -->
+        <!-- End service Grid -->
         <!-- Start Brand Area -->
         <div class="htc__brand__area bg__cat--4">
             <div class="container">
@@ -109,14 +109,14 @@ $get_services = get_services($con,'',$cat_id);
         <!-- Start Banner Area -->
         <div class="htc__banner__area">
             <ul class="banner__list owl-carousel owl-theme clearfix">
-                <li><a href="product-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
-                <li><a href="product-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
-                <li><a href="product-details.html"><img src="images/banner/bn-3/3.jpg" alt="banner images"></a></li>
-                <li><a href="product-details.html"><img src="images/banner/bn-3/4.jpg" alt="banner images"></a></li>
-                <li><a href="product-details.html"><img src="images/banner/bn-3/5.jpg" alt="banner images"></a></li>
-                <li><a href="product-details.html"><img src="images/banner/bn-3/6.jpg" alt="banner images"></a></li>
-                <li><a href="product-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
-                <li><a href="product-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
+                <li><a href="service-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
+                <li><a href="service-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
+                <li><a href="service-details.html"><img src="images/banner/bn-3/3.jpg" alt="banner images"></a></li>
+                <li><a href="service-details.html"><img src="images/banner/bn-3/4.jpg" alt="banner images"></a></li>
+                <li><a href="service-details.html"><img src="images/banner/bn-3/5.jpg" alt="banner images"></a></li>
+                <li><a href="service-details.html"><img src="images/banner/bn-3/6.jpg" alt="banner images"></a></li>
+                <li><a href="service-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
+                <li><a href="service-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
             </ul>
         </div>
         <!-- End Banner Area -->

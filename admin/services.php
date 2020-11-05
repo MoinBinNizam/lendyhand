@@ -43,7 +43,7 @@ $res = mysqli_query($con,$sql);
                             <th>Category</th>
                             <th>Name</th>
                             <th>Unit price</th>
-                            <th>Totale price</th>
+                            <th>Total price</th>
                             <th>Quantity</th>
                             <th>Image</th>
                             <th></th>

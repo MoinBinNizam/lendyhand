@@ -20,12 +20,12 @@
   10. Service Area
   11. Promo Box Area
   12. About Area
-  13. Best Sell Product
+  13. Best Sell service
   14. Intractive Banner Area
   15. Fashion Icon Area
   16. Bradcaump Area
-  17. Product Sibebar Area
-  18. Product Details
+  17. service Sibebar Area
+  18. service Details
   19. Our Cart Area
   20. Our Blog Page
   21. Our Pagination
@@ -233,11 +233,11 @@
     right: 20px;
     top: 20px;
 }
-.fr__product__inner {
+.fr__service__inner {
     padding-top: 23px;
     text-align: center;
 }
-.fr__product__inner h4 a {
+.fr__service__inner h4 a {
     color: #444;
     font-family: Old Standard TT;
     font-size: 17px;
@@ -245,7 +245,7 @@
     text-transform: capitalize;
     transition: all 0.3s ease 0s;
 }
-.fr__product__inner h4 a:hover{
+.fr__service__inner h4 a:hover{
     color: #c43b68;
 }
 .fr__pro__prize {
@@ -314,41 +314,41 @@
   04. New Arrivals Area
 ----------------------------------------*/
 
-.product {
+.service {
     margin-top: 40px;
     position: relative;
 }
-.product__wrap {
+.service__wrap {
     margin-top: 30px;
 }
-.product__thumb a {
+.service__thumb a {
     display: block;
 }
-.product__thumb a img {
+.service__thumb a img {
     width: 100%;
 }
-.product__offer {
+.service__offer {
     left: 30px;
     position: absolute;
     top: 20px;
 }
-.product__offer span {
+.service__offer span {
     color: #c43b68;
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
     text-transform: uppercase;
 }
-.product__offer span.new {
+.service__offer span.new {
     color: #ffa200;
 }
-.product__offer span + span {
+.service__offer span + span {
     padding-left: 10px;
 }
-.product__thumb {
+.service__thumb {
     position: relative;
     overflow: hidden;
 }
-.product__hover__info {
+.service__hover__info {
     bottom: -20px;
     margin: auto;
     position: absolute;
@@ -356,17 +356,17 @@
     opacity: 0;
     transition: 0.5s;
 }
-.product:hover .product__hover__info {
+.service:hover .service__hover__info {
     bottom: 0px;
     opacity: 1;
 }
 
-.product__action {
+.service__action {
     display: flex;
     justify-content: center;
     flex-flow: column;
 }
-.product__action li a {
+.service__action li a {
     background: #fefefe none repeat scroll 0 0;
     display: inline-block;
     height: 50px;
@@ -375,50 +375,50 @@
     transition: all 0.4s ease 0s;
     width: 50px;
 }
-.product__action li {
+.service__action li {
     margin: 0;
     margin-bottom: 2px;
 }
-.product__action li a i {
+.service__action li a i {
     color: #313131;
     font-size: 18px;
     transition: all 0.4s ease 0s;
 }
-.product__action li a:hover {
+.service__action li a:hover {
     background: #c43b68 none repeat scroll 0 0;
 }
-.product__action li a:hover i {
+.service__action li a:hover i {
     color: #fff;
 }
 
-.product__action li:nth-child(1) {
+.service__action li:nth-child(1) {
     opacity: 0;
     transition: opacity 300ms linear 0s;
 }
-.product__action li:nth-child(2) {
+.service__action li:nth-child(2) {
     opacity: 0;
     transition: opacity 500ms linear 0s;
 }
-.product__action li:nth-child(3) {
+.service__action li:nth-child(3) {
     opacity: 0;
     transition: opacity 700ms linear 0s;
 }
 
-.category:hover .product__action li:nth-child(1) {
+.category:hover .service__action li:nth-child(1) {
     -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInRight;
           animation: 300ms ease-in-out 0s normal none 1 running fadeInRight;
     opacity: 1;
     transition: opacity 300ms linear 0s;
 }
 
-.category:hover .product__action li:nth-child(2) {
+.category:hover .service__action li:nth-child(2) {
     -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInRight;
           animation: 500ms ease-in-out 0s normal none 1 running fadeInRight;
     opacity: 1;
     transition: opacity 500ms linear 0s;
 }
 
-.category:hover .product__action li:nth-child(3) {
+.category:hover .service__action li:nth-child(3) {
     -webkit-animation: 700ms ease-in-out 0s normal none 1 running fadeInRight;
           animation: 700ms ease-in-out 0s normal none 1 running fadeInRight;
     opacity: 1;
@@ -429,7 +429,7 @@
     overflow: hidden;
     position: relative;
 }
-.fr__product__inner.inner__position {
+.fr__service__inner.inner__position {
     background: #fff none repeat scroll 0 0;
     bottom: -20px;
     left: 0;
@@ -445,7 +445,7 @@
     float: left;
     justify-content: flex-start;
 }
-.category:hover .fr__product__inner.inner__position {
+.category:hover .fr__service__inner.inner__position {
     bottom: 0;
     opacity: 1;
 }
@@ -456,13 +456,13 @@
 .inner__position .fr__pro__prize {
     margin-top: 0;
 }
-.inner__position .fr__product__inner h4 a {
+.inner__position .fr__service__inner h4 a {
     display: block;
     margin-bottom: 8px;
 }
 
 
-.product__inner {
+.service__inner {
     padding-top: 25px;
     text-align: center;
 }
@@ -471,7 +471,7 @@
     justify-content: center;
     margin-top: 7px;
 }
-.product__details h2 {
+.service__details h2 {
     color: #444;
     font-family: Old Standard TT;
     font-size: 16px;
@@ -489,7 +489,7 @@
     font-weight: 400;
     padding-right: 12px;
 }
-.htc__product__area {
+.htc__service__area {
     padding-top: 60px;
 }
 /*----------------------------------
@@ -1058,7 +1058,7 @@
 }
 
 /*---------------------------------------
-  13. Best Sell Product
+  13. Best Sell service
 ----------------------------------------*/
 
 
@@ -1125,7 +1125,7 @@
     transition: all 0.5s ease 0s;
 }
 
-.htc__best__product {
+.htc__best__service {
   align-items: center;
   display: flex;
   margin-top: 40px;
@@ -1135,7 +1135,7 @@
     margin-right: 30px;
     min-width: 180px;
 }
-.htc__best__product__details h2 {
+.htc__best__service__details h2 {
     color: #444;
     font-family: "Old Standard TT",serif;
     font-size: 17px;
@@ -1173,10 +1173,10 @@
     font-weight: 400;
     padding-right: 10px;
 }
-.product__action--dft {
+.service__action--dft {
     display: flex;
 }
-.product__action--dft li a {
+.service__action--dft li a {
     background: #f6f6f6 none repeat scroll 0 0;
     color: #313131;
     display: inline-block;
@@ -1187,13 +1187,13 @@
     transition: all 0.3s ease 0s;
     width: 50px;
 }
-.best__product__action {
+.best__service__action {
     margin-top: 32px;
 }
-.product__action--dft li {
+.service__action--dft li {
     margin-right: 4px;
 }
-.product__action--dft li a:hover {
+.service__action--dft li a:hover {
     background: #c43b68 none repeat scroll 0 0;
     color: #fff;
 }
@@ -1203,17 +1203,17 @@
     justify-content: flex-start;
     margin-top: 13px;
 }
-.htc__best__sell__wrap .product__action {
+.htc__best__sell__wrap .service__action {
     justify-content: flex-start;
 }
-.htc__best__sell__wrap .product__action li a {
+.htc__best__sell__wrap .service__action li a {
     background: #f6f6f6;
 }
-.htc__best__sell__wrap .product__action li a:hover {
+.htc__best__sell__wrap .service__action li a:hover {
     background: #c43b68;
     color: #fff;
 }
-.htc__best__sell__wrap .best__product__action {
+.htc__best__sell__wrap .best__service__action {
     margin-top: 33px;
 }
 
@@ -1390,7 +1390,7 @@
 }
 
 /*------------------------------
-  17. Product Sibebar Area
+  17. service Sibebar Area
 --------------------------------*/
 
 .single-grid-view.tab-pane:not(.active) {
@@ -1595,7 +1595,7 @@
     margin-top: 14px;
 }
 
-.htc__recent__product {
+.htc__recent__service {
     margin-top: 39px;
 }
 .ht__com__btn li a {
@@ -1616,16 +1616,16 @@
 .ht__com__btn li.compare a:hover {
     background: #c43b68 none repeat scroll 0 0;
 }
-.htc__recent__product__inner .htc__best__pro__thumb {
+.htc__recent__service__inner .htc__best__pro__thumb {
     min-width: 100px;
 }
-.htc__recent__product__inner .pro__prize {
+.htc__recent__service__inner .pro__prize {
     justify-content: flex-start;
 }
-.htc__recent__product__inner .htc__best__product {
+.htc__recent__service__inner .htc__best__service {
     margin-top: 30px;
 }
-.htc__recent__product__inner {
+.htc__recent__service__inner {
     margin-top: 41px;
 }
 .price--output > span {
@@ -1679,10 +1679,10 @@
   Shop List Sidebar
 ---------------------------*/
 
-.ht__list__product {
+.ht__list__service {
     margin-top: 40px;
 }
-.ht__list__product {
+.ht__list__service {
     display: flex;
 }
 .ht__list__thumb {
@@ -1712,16 +1712,16 @@
     margin-bottom: 26px;
     margin-top: 15px;
 }
-.htc__list__details .product__action {
+.htc__list__details .service__action {
     justify-content: flex-start;
 }
-.ht__list__product .product__action li a {
+.ht__list__service .service__action li a {
     background: #f6f6f6 none repeat scroll 0 0;
 }
-.ht__list__product .product__action li + li {
+.ht__list__service .service__action li + li {
     margin-left: 30px;
 }
-.ht__list__product .product__action li.ht__addto__cart a {
+.ht__list__service .service__action li.ht__addto__cart a {
     background: #c43b68 none repeat scroll 0 0;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
@@ -1733,7 +1733,7 @@
     transition: all 0.4s ease 0s;
     width: auto;
 }
-.ht__list__product .product__action li.ht__addto__cart a i {
+.ht__list__service .service__action li.ht__addto__cart a i {
     background: #c43b68 none repeat scroll 0 0;
     border-right: 1px solid #fff;
     color: #fff;
@@ -1745,14 +1745,14 @@
     width: 50px;
 }
 
-.ht__list__product .product__action li.ht__addto__cart a:hover,
-.ht__list__product .product__action li.ht__addto__cart a.active {
+.ht__list__service .service__action li.ht__addto__cart a:hover,
+.ht__list__service .service__action li.ht__addto__cart a.active {
     background: #212121 none repeat scroll 0 0;
 }
-.ht__list__product .product__action li.ht__addto__cart a.active:hover{
+.ht__list__service .service__action li.ht__addto__cart a.active:hover{
     background: #c43b68;
 }
-.ht__list__product .product__action li a:hover {
+.ht__list__service .service__action li a:hover {
     background: #c43b68;
     color: #fff;
 }
@@ -1808,14 +1808,14 @@ select.ht__select {
 }
 
 /*------------------------------
-  18. Product Details
+  18. service Details
 --------------------------------*/
 
 .pro__single__content.tab-pane:not(.active) {
     display: none;
 }
 
-.product__small__images {
+.service__small__images {
     bottom: 35px;
     display: flex;
     left: 50%;
@@ -1823,44 +1823,44 @@ select.ht__select {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
 }
-.htc__product__details__tab__content {
+.htc__service__details__tab__content {
     position: relative;
 }
-.product__small__images li {
+.service__small__images li {
     border: 1px solid #fff;
     margin: 0 8px;
     transition: all 0.4s ease 0s;
 }
-.product__small__images li.active {
+.service__small__images li.active {
     border: 1px solid #c43b68;
 }
-.product__small__images li:hover {
+.service__small__images li:hover {
     border: 1px solid #c43b68;
 }
-.ht__product__dtl h2 {
+.ht__service__dtl h2 {
     color: #444;
     font-family: Old Standard TT;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
 }
-.ht__product__dtl h6 {
+.ht__service__dtl h6 {
     color: #100d13;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     margin-top: 11px;
     margin-bottom: 11px;
 }
-.ht__product__dtl h6 span {
+.ht__service__dtl h6 span {
     color: #868686;
     font-family: 'Old Standard TT', serif;
     font-size: 15px;
     text-transform: uppercase;
 }
-.ht__product__dtl .pro__prize {
+.ht__service__dtl .pro__prize {
     justify-content: flex-start;
 }
-.ht__product__dtl p {
+.ht__service__dtl p {
     color: #666666;
     font-size: 16px;
     line-height: 26px;
@@ -1966,11 +1966,11 @@ select.ht__select {
 .pro__share li + li {
     margin-left: 9px;
 }
-.sin__desc.product__share__link {
+.sin__desc.service__share__link {
     margin-top: 18px;
 }
 
-.sin__desc.product__share__link {
+.sin__desc.service__share__link {
     margin-top: 18px;
 }
 .pro__details__tab {
@@ -2099,26 +2099,26 @@ select.select__size {
     padding: 0 5px 0 10px;
     width: 60px;
 }
-.table-content table td.product-subtotal {
+.table-content table td.service-subtotal {
     color: #313131;
     font-size: 14px;
     width: 120px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
-.table-content table td.product-name a {
+.table-content table td.service-name a {
     color: #444;
     font-size: 16px;
     font-weight: 600;
     text-transform: capitalize;
 }
-.table-content table td.product-name{
+.table-content table td.service-name{
     width: 270px;
 }
-.table-content table td.product-thumbnail{
+.table-content table td.service-thumbnail{
     width: 130px;
 }
-.table-content table td.product-remove i {
+.table-content table td.service-remove i {
     color: #212121;
     display: inline-block;
     font-size: 24px;
@@ -2127,26 +2127,26 @@ select.select__size {
     text-align: center;
     width: 40px;
 }
-.table-content table .product-price .amount {
+.table-content table .service-price .amount {
     color: #313131;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-weight: 600;
 }
-.table-content table td.product-remove i:hover {
+.table-content table td.service-remove i:hover {
     color: #ee393e;
 }
-.table-content table td.product-quantity{
+.table-content table td.service-quantity{
     width: 180px;
 }
-.table-content table td.product-remove{
+.table-content table td.service-remove{
     width: 150px;
 }
-.table-content table td.product-price{
+.table-content table td.service-price{
     width: 130px;
 }
-.table-content table td.product-name a:hover,.buttons-cart a:hover{
+.table-content table td.service-name a:hover,.buttons-cart a:hover{
     color: #c43b68
 }
 .buttons-cart a {
@@ -2448,7 +2448,7 @@ a.shipping-calculator-button:hover{
     font-size: 14px;
     font-weight: 600;
 }
-.product-name .pro__prize {
+.service-name .pro__prize {
     margin-top: 4px;
 }
 
@@ -2861,7 +2861,7 @@ a.shipping-calculator-button:hover{
 }
 .contact-box.name input {
     margin: 0 20px;
-    width: 50%;
+    width: 100%;
 }
 
 /*---------------------------------------
@@ -2888,24 +2888,24 @@ a.shipping-calculator-button:hover{
     padding: 15px 10px;
     text-align: center;
 }
-.wishlist-table table .product-remove {
+.wishlist-table table .service-remove {
     padding: 0 15px;
     width: 20px;
 }
-.wishlist-table table .product-remove > a, 
-.table-content table .product-remove > a {
+.wishlist-table table .service-remove > a, 
+.table-content table .service-remove > a {
     font-size: 25px;
 }
-.wishlist-table table .product-thumbnail {
+.wishlist-table table .service-thumbnail {
     width: 150px;
 }
-.wishlist-table table td.product-price .amount {
+.wishlist-table table td.service-price .amount {
     font-weight: 700;
 }
 .wishlist-table table .wishlist-in-stock {
     color: #444;
 }
-.wishlist-table table .product-add-to-cart > a {
+.wishlist-table table .service-add-to-cart > a {
     background: #252525 none repeat scroll 0 0;
     color: #fff;
     display: block;
@@ -2914,11 +2914,11 @@ a.shipping-calculator-button:hover{
     text-transform: uppercase;
     width: 260px;
 }
-.wishlist-table table .product-add-to-cart > a:hover{
+.wishlist-table table .service-add-to-cart > a:hover{
     background: #c43b68;
     color: #fff;
 }
-.wishlist-table table .product-add-to-cart {
+.wishlist-table table .service-add-to-cart {
     width: 240px;
 }
 .wishlist-share {
@@ -3572,5 +3572,15 @@ ul.htc__instagram__posts.owl-carousel li img {
     font-weight: bold;
     font-size: 20px;
 }
-
-
+#msg{
+    color:green;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+p.form-messege {
+    color: red;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -14,7 +14,7 @@
 ---------------------------------
     01. jQuery MeanMenu
     02. wow js active
-    03. Product  Masonry (width)
+    03. service  Masonry (width)
     04. Sticky Header
     05. ScrollUp
     06. Search Bar
@@ -62,18 +62,18 @@
 
 
 /*-------------------------------------------
-    03. Product  Masonry (width)
+    03. service  Masonry (width)
 --------------------------------------------- */ 
 
-    $('.htc__product__container').imagesLoaded( function() {
+    $('.htc__service__container').imagesLoaded( function() {
       
         // filter items on button click
-        $('.product__menu').on( 'click', 'button', function() {
+        $('.service__menu').on( 'click', 'button', function() {
           var filterValue = $(this).attr('data-filter');
           $grid.isotope({ filter: filterValue });
         }); 
         // init Isotope
-        var $grid = $('.product__list').isotope({
+        var $grid = $('.service__list').isotope({
           itemSelector: '.single__pro',
           percentPosition: true,
           transitionDuration: '0.7s',
@@ -85,7 +85,7 @@
 
     });
 
-    $('.product__menu button').on('click', function(event) {
+    $('.service__menu button').on('click', function(event) {
         $(this).siblings('.is-checked').removeClass('is-checked');
         $(this).addClass('is-checked');
         event.preventDefault();
@@ -456,3 +456,109 @@
 // }
 //
 
+jQuery('#frmContactus').on('submit',function(e){
+    jQuery('#msg').html('');
+    jQuery('#submit').html('Please wait');
+    jQuery('#submit').attr('disabled',true);
+    jQuery.ajax({
+        url:'submit.php',
+        type:'post',
+        data:jQuery('#frmContactus').serialize(),
+        success:function(result){
+            jQuery('#msg').html(result);
+            jQuery('#submit').html('Submit');
+            jQuery('#submit').attr('disabled',false);
+            jQuery('#frmContactus')[0].reset();
+        }
+    });
+    e.preventDefault();
+});
+function user_register(){
+    jQuery('.field_error').html('');
+    var name=jQuery("#name").val();
+    var email=jQuery("#email").val();
+    var mobile=jQuery("#mobile").val();
+    var password=jQuery("#password").val();
+    var is_error='';
+
+    if(name==""){
+        jQuery('#name_error').html('Please enter Name');
+        is_error='yes';
+    } if(email==""){
+        jQuery('#email_error').html('Please enter Email');
+        is_error='yes';
+    } if(mobile==""){
+        jQuery('#mobile_error').html('Please enter Mobile');
+        is_error='yes';
+    } if(password==""){
+        jQuery('#password_error').html('Please enter Password');
+        is_error='yes';
+    }
+    if(is_error==''){
+        jQuery.ajax({
+              url:'register_submit.php',
+              type:'post',
+              data:'name='+name+'&email='+email+'&mobile='+mobile+'&password='+password,
+                success:function(result){
+                  if(result=='email_present'){
+                      jQuery('#email_error').html('Email id already present') ;
+                  }
+                  if(result=='insert'){
+                        jQuery('.register_msg p').html('Thank you for registration') ;
+
+                    }
+                }
+            });
+    }
+}
+
+//Login
+function user_login(){
+    jQuery('.field_error').html('');
+    var email=jQuery("#login_email").val();
+    var password=jQuery("#login_password").val();
+    var is_error='';
+
+    if(email==""){
+        jQuery('#login_email_error').html('Please enter Email');
+        is_error='yes';
+    } if(password==""){
+        jQuery('#login_password_error').html('Please enter Password');
+        is_error='yes';
+    }
+    if(is_error==''){
+        jQuery.ajax({
+            url:'login_submit.php',
+            type:'post',
+            data:'email='+email+'&password='+password,
+            success:function(result){
+                if(result=='wrong'){
+                    jQuery('.login_msg p').html('Please enter valid login details') ;
+                }
+                if(result=='valid'){
+                    window.location.href='index.php';
+
+                }
+            }
+        });
+    } 
+}
+function manage_cart(sid,type){
+    if(type =='update'){
+        var qty=jQuery("#"+sid+"qty").val();
+    }else {
+        var qty=jQuery("#qty").val();
+    }
+    var qty=jQuery("#qty").val();
+      jQuery.ajax({
+            url:'manage_cart.php',
+            type:'post',
+            data:'sid='+sid+'&qty='+qty+'&type='+type,
+            success:function(result){
+                if(type=='update' || type=='remove'){
+                    window.location.href='cart.php';
+                }
+                jQuery('.htc__qua').html(result);
+            }
+        });
+}

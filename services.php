@@ -25,28 +25,28 @@ $get_services = get_services($con,'','',$service_id);
             </div>
         </div>
         <!-- End Bradcaump area -->
-        <!-- Start Product Details Area -->
-        <section class="htc__product__details bg__white ptb--100">
-            <!-- Start Product Details Top -->
-            <div class="htc__product__details__top">
+        <!-- Start service Details Area -->
+        <section class="htc__service__details bg__white ptb--100">
+            <!-- Start service Details Top -->
+            <div class="htc__service__details__top">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
-                            <div class="htc__product__details__tab__content">
-                                <!-- Start Product Big Images -->
-                                <div class="product__big__images">
+                            <div class="htc__service__details__tab__content">
+                                <!-- Start service Big Images -->
+                                <div class="service__big__images">
                                     <div class="portfolio-full-image tab-content">
                                         <div role="tabpanel" class="tab-pane fade in active" id="img-tab-1">
-                                            <img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$get_services['0']['img'] ?>" alt="full-image">
+                                            <img src="<?php echo SERVICE_IMAGE_SITE_PATH.$get_services['0']['img'] ?>" alt="full-image">
                                         </div>
                                     </div>
                                 </div>
-                                <!-- End Product Big Images -->
+                                <!-- End service Big Images -->
                                 
                             </div>
                         </div>
                         <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 smt-40 xmt-40">
-                            <div class="ht__product__dtl">
+                            <div class="ht__service__dtl">
                                 <h2><?php echo $get_services['0']['name'] ?></h2>
                                 <ul  class="pro__prize">
                                     <li class="old__prize"><?php echo $get_services['0']['unit_price'] ?></li>
@@ -55,7 +55,24 @@ $get_services = get_services($con,'','',$service_id);
                                 <p class="pro__info"><?php echo $get_services['0']['short_desc'] ?></p>
                                 <div class="ht__pro__desc">
                                     <div class="sin__desc">
-                                        <p><span>Availability:</span> In Stock</p>
+                                        <p><span>Availability:</span> Available</p>
+                                    </div>
+                                    <div class="sin__desc">
+                                        <p><span>Qty:</span>
+                                        <select id="qty">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                        </select>
+
+                                        </p>
                                     </div>
                                     <div class="sin__desc align--left">
                                         <p><span>Categories:</span></p>
@@ -65,17 +82,17 @@ $get_services = get_services($con,'','',$service_id);
                                     </div>
                                     
                                     </div>
-                                <a class="fr__btn" href="#">Add to cart</a>
+                                <a class="fr__btn" href="javascript:void(0)" onclick="manage_cart('<?php echo $get_services['0']['id']?>','add')">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- End Product Details Top -->
+            <!-- End service Details Top -->
         </section>
-        <!-- End Product Details Area -->
-		<!-- Start Product Description -->
+        <!-- End service Details Area -->
+		<!-- Start service Description -->
         <section class="htc__produc__decription bg__white">
             <div class="container">
                 <div class="row">
@@ -103,7 +120,7 @@ $get_services = get_services($con,'','',$service_id);
                 </div>
             </div>
         </section>
-        <!-- End Product Description -->
+        <!-- End service Description -->
 
 <?php
 require('footer.php');

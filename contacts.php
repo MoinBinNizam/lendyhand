@@ -1,23 +1,11 @@
 <?php
-//require ('connection.inc.php');
 require('top.php');
-//PHP Save Form Data into Database and Send Email to Admin using GMAIL SMTP | With AJAX
-$msg="";
-if(isset($_POST['submit'])){
-    $name=mysqli_real_escape_string($con, $_POST['name']);
-    $email=mysqli_real_escape_string($con, $_POST['email']);
-    $mobile=mysqli_real_escape_string($con, $_POST['mobile']);
-    $message=mysqli_real_escape_string($con, $_POST['message']);
+//require_once ('submit.php');
 
-    mysqli_query("insert into contact_us(name,email,mobile,message) values ('$name','$email','$mobile','$message')");
-    $msg="Thank you";
+//default variables and set to empty values
+//$name_error = $email_error = $mobile_error = $message_error= "";
+//$name= $email = $mobile =$message = "";
 
-
-}
-////default variables and set to empty values
-//$name_error = $email_error = $mobile_error = $comment_error= "";
-//$name= $email = $mobile =$comment = "";
-//
 ////form submitted with post method
 //if ($_SERVER["REQUEST_METHOD"] =="POST"){
 //    if(empty($_POST["name"])){
@@ -46,25 +34,25 @@ if(isset($_POST['submit'])){
 //        if (!preg_match("/^(\d[\s-]?)?[\(\[\s-]{0,2}?\d{3}[\)\]\s-]{0,2}?\d{3}[\s-]?\d{4}$/i",$mobile)) {
 //            $mobile_error = "Invalid mobile number";
 //        }
-//        }
-//    if(empty($_POST['comment'])){
-//        $comment = "Input your comment";
-//    }else{
-//        $comment = test_input($_POST['comment']);
 //    }
-////    if($name_error =='' and $email_error =='' and  $mobile_error =='' ){
-////        $message_body = '';
-////        unset($_POST['submit']);
-////        foreach ($_POST as $key => $value){
-////            $message_body .= "$key: $value \n";
-////        }
-////    }
-////    $to = 'moinuddinpkt@gmail.com';
-////    $subject= 'Contact Form Subject';
-////    if(mail($to,$subject,$message_body)) {
-////    $success = "Message sent, thank you for contacting us!";
-////    $name = $email = $mobile = $comment ='';
-////    }
+//    if(empty($_POST['message'])){
+//        $message = "Input your message";
+//    }else{
+//        $message= test_input($_POST['message']);
+//    }
+//    if($name_error =='' and $email_error =='' and  $mobile_error =='' ){
+//        $message_body = '';
+//        unset($_POST['submit']);
+//        foreach ($_POST as $key => $value){
+//            $message_body .= "$key: $value \n";
+//        }
+//    }
+//    $to = 'moinuddinpkt@gmail.com';
+//    $subject= 'Contact Form Subject';
+//    if(mail($to,$subject,$message_body)) {
+//    $success = "Message sent, thank you for contacting us!";
+//    $name = $email = $mobile = $comment ='';
+//    }
 //}
 //function test_input($data){
 //    $data   = trim($data);
@@ -131,21 +119,26 @@ if(isset($_POST['submit'])){
                             </div>
                         </div>
                         <div class="col-xs-12">
-                            <form id="contact-form" action="#" method="post">
+                            <form id="frmContactus" method="post" >
                                 <div class="single-contact-form">
                                     <div class="contact-box name">
                                         <input type="text" id="name" name="name" placeholder="Your Name*">
-                                        <input type="email" id="email" name="email" placeholder="Email*">
-                                        <input type="text" id="mobile" name="mobile" placeholder="Mobile*">
+<!--                                        <span class="error">--><?//= $name_error ?><!--</span>-->
+                                        <input type="email" id="email" name="email" placeholder="Email*" >
+<!--                                        <span class="error">--><?//= $email_error ?><!--</span>-->
+                                        <input type="text" id="mobile" name="mobile" placeholder="Mobile*" >
+<!--                                        <span class="error">--><?//= $mobile_error ?><!--</span>-->
                                     </div>
                                 </div>
                                 <div class="single-contact-form">
                                     <div class="contact-box message">
-                                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                                        <textarea name="message" id="message" placeholder="Your Message" ></textarea>
+<!--                                        <span class="error">--><?//= $message_error ?><!--</span>-->
                                     </div>
                                 </div>
                                 <div class="contact-btn">
-                                    <button type="button" onclick="send_message" class="fv-btn">Send MESSAGE</button>
+                                    <button type="submit" class="fv-btn" name="submit" id="submit">Send MESSAGE</button>
+                                    <span  id="msg"></span>
                                 </div>
                             </form>
                             <div class="form-output">
@@ -364,6 +357,8 @@ if(isset($_POST['submit'])){
 
             });
         }
+
+
     </script>
 <?php
 require('footer.php');

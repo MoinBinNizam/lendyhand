@@ -31,7 +31,7 @@ $res = mysqli_query($con,$sql);
                             <th>Name</th>
                             <th>Email</th>
                             <th>Mobile</th>
-                            <th>Comment</th>
+                            <th>Message</th>
                             <th>Date</th>
                             <th></th>
                         </tr>
@@ -49,7 +49,7 @@ $res = mysqli_query($con,$sql);
                         <td><?php echo $row['name'] ?> </td>
                         <td><?php echo $row['email'] ?> </td>
                         <td><?php echo $row['mobile'] ?> </td>
-                        <td><?php echo $row['comment'] ?> </td>
+                        <td><?php echo $row['message'] ?> </td>
                         <td><?php echo $row['added_on'] ?> </td>
                         
                         <td>
