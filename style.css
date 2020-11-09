@@ -3168,7 +3168,31 @@ ul.htc__instagram__posts.owl-carousel li img {
 .htc__instagram__area ul li a{
     position: relative;
 }
-
+.wishlist-table table .product-thumbnail {
+    width: 150px;
+}
+.wishlist-table table td.product-price .amount {
+    font-weight: 700;
+}
+.wishlist-table table .wishlist-in-stock {
+    color: #444;
+}
+.wishlist-table table .product-add-to-cart > a {
+    background: #252525 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    padding: 10px 56px;
+    text-transform: uppercase;
+    width: 260px;
+}
+.wishlist-table table .product-add-to-cart > a:hover{
+    background: #c43b68;
+    color: #fff;
+}
+.wishlist-table table .product-add-to-cart {
+    width: 240px;
+}
 .htc__instagram__area ul li a:before{
     position: absolute;
     content: "";
@@ -3252,7 +3276,8 @@ ul.htc__instagram__posts.owl-carousel li img {
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
+    text-decoration: underline;
 }
 .accordion__body__form .checkout-method .checkout-method__title{
     display: -moz-flex;
@@ -3580,7 +3605,7 @@ ul.htc__instagram__posts.owl-carousel li img {
 }
 p.form-messege {
     color: red;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
     font-size: 18px;
     font-weight: bold;
 }

@@ -1,6 +1,6 @@
 <?php
 require('top.php');
-
+//pr($_SESSION['cart']);
 ?>
     <!-- Start Bradcaump area -->
     <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat scroll center center / cover ;">
@@ -10,7 +10,7 @@ require('top.php');
                     <div class="col-xs-12">
                         <div class="bradcaump__inner">
                             <nav class="bradcaump-inner">
-                                <a class="breadcrumb-item" href="index.html">Home</a>
+                                <a class="breadcrumb-item" href="index.php">Home</a>
                                 <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
                                 <span class="breadcrumb-item active">shopping cart</span>
                             </nav>
@@ -58,10 +58,10 @@ require('top.php');
                                         </ul>
                                     </td>
                                     <td class="service-price"><span class="amount"><?php echo $total_price ?></span></td>
-                                    <td class="service-quantity"><input type="number" id="<?php echo $key ?>qty" value="<?php echo $qty ?>" />
+                                    <td class="service-quantity"><input type="number" id="<?php echo $key ?> qty" value="<?php echo $qty ?>" />
                                         <br/><a href="javascript:void(0)" onclick="manage_cart('<?php echo $key?>','update')">Update</a>
                                     </td>
-                                    <td class="service-subtotal"><?php echo $qty*$total_price ?></td>
+                                    <td class="service-subtotal"><?php echo  (int)$qty*(int)$total_price ?></td>
                                     <td class="service-remove"><a href="javascript:void(0)" onclick="manage_cart('<?php echo $key?>','remove')"><i class="icon-trash icons"></i></a></td>
                                 </tr>
                                     <?php
@@ -74,11 +74,11 @@ require('top.php');
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="buttons-cart--inner">
                                     <div class="buttons-cart">
-                                        <a href="#">Continue Shopping</a>
+                                        <a href="<?php echo SITE_PATH ?>">Continue Shopping</a>
                                     </div>
                                     <div class="buttons-cart checkout--btn">
-                                        <a href="#">update</a>
-                                        <a href="#">checkout</a>
+
+                                        <a href="<?php  echo SITE_PATH ?>checkout.php">checkout</a>
                                     </div>
                                 </div>
                             </div>
@@ -91,6 +91,7 @@ require('top.php');
     <!-- cart-main-area end -->
     <!-- End Banner Area -->
 <?php
+
 require('footer.php');
 
 ?>

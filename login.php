@@ -1,5 +1,12 @@
 <?php
+ob_start();
 require('top.php');
+
+if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
+    header('location:my_order.php');
+    die();
+}
+ob_end_flush();
 ?>
     <!-- Start Bradcaump area -->
     <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat scroll center center / cover ;">

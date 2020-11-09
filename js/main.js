@@ -536,7 +536,7 @@ function user_login(){
                     jQuery('.login_msg p').html('Please enter valid login details') ;
                 }
                 if(result=='valid'){
-                    window.location.href='index.php';
+                    window.location.href=window.location.href;
 
                 }
             }
@@ -549,14 +549,14 @@ function manage_cart(sid,type){
     }else {
         var qty=jQuery("#qty").val();
     }
-    var qty=jQuery("#qty").val();
+
       jQuery.ajax({
             url:'manage_cart.php',
             type:'post',
             data:'sid='+sid+'&qty='+qty+'&type='+type,
             success:function(result){
                 if(type=='update' || type=='remove'){
-                    window.location.href='cart.php';
+                    window.location.href=window.location.href;
                 }
                 jQuery('.htc__qua').html(result);
             }

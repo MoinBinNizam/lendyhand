@@ -16,5 +16,5 @@ require ('add_to_cart.inc');
     }
     if($type == 'update'){
         $obj->updateService($sid,$qty);
-}
+    }
      echo $obj->totalService();

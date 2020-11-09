@@ -25,86 +25,33 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7eec7b99-ccd8-4d40-b24f-5b17283cbe62" name="Default Changelist" comment="code changed">
-      <change afterPath="$PROJECT_DIR$/add_to_cart.inc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login_submit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage_cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/service/889129035_15209.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/register_submit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/PHPMailerAutoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/class.phpmailer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/class.phpmaileroauth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/class.phpmaileroauthgoogle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/class.pop3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/class.smtp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/get_oauth_token.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-am.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-ar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-az.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-ba.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-be.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-bg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-ca.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-ch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-cs.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-da.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-de.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-el.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-eo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-es.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-et.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-fa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-fi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-fo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-fr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-gl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-he.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-hr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-hu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-it.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-ja.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-ka.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-ko.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-lt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-lv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-ms.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-nb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-nl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-pl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-pt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-pt_br.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-ro.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-rs.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-ru.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-sk.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-sl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-sv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-tr.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-uk.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-vi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-zh.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/language/phpmailer.lang-zh_cn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smtp/smtp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/submit.php" afterDir="false" />
+    <list default="true" id="7eec7b99-ccd8-4d40-b24f-5b17283cbe62" name="Default Changelist" comment="code_updated+file_added">
+      <change afterPath="$PROJECT_DIR$/checkout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/bg/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/service/272685520_electrician.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/service/760231134_home shifting.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/service/793399008_hair cut.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_order_details.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thank_you.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/assets/js/lib/data-table/pdfmake.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/js/lib/data-table/pdfmake.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/contact_us.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/contact_us.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/top.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/top.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/categories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connection.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/connection.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bg/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/bg/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bg/3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage_cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage_cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/service/607891537_electrician.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/service/655036396_sd.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/service/832711808_placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/service/875523401_Cleaning-Job.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/service/882347720_15209.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/service/889129035_15209.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/service/958486157_HCI_Final.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/service/976787595_15209.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/service/_1images.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/top.php" beforeDir="false" afterPath="$PROJECT_DIR$/top.php" afterDir="false" />
     </list>
@@ -173,7 +120,7 @@
       <workItem from="1602783480173" duration="860000" />
       <workItem from="1603116655912" duration="109985000" />
       <workItem from="1604496238560" duration="259000" />
-      <workItem from="1604496618124" duration="3089000" />
+      <workItem from="1604496618124" duration="68200000" />
     </task>
     <task id="LOCAL-00001" summary="js added">
       <created>1601898021879</created>
@@ -217,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603553265460</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="code_updated+file_added">
+      <created>1604568892079</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604568892079</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +194,8 @@
     <MESSAGE value="js added" />
     <MESSAGE value="new file added" />
     <MESSAGE value="code changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="code changed" />
+    <MESSAGE value="code_updated+file_added" />
+    <option name="LAST_COMMIT_MESSAGE" value="code_updated+file_added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="160" y="0" key="#CLI_Interpreters" timestamp="1603129993462">
@@ -255,10 +210,10 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="2002" y="299" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1603697106869" />
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603375363802">
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1604569115875">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603375363802" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604569115875" />
     <state x="489" y="2" key="FileChooserDialogImpl" timestamp="1603129975947">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -289,11 +244,15 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="1738" y="150" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1601693191619" />
-    <state x="1612" y="44" key="Vcs.Push.Dialog.v2" timestamp="1603553387657">
-      <screen x="1366" y="0" width="1920" height="1040" />
+    <state x="175" y="31" key="Vcs.Push.Dialog.v2" timestamp="1604569121654">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="175" y="31" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603375295107" />
+    <state x="175" y="31" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604569121654" />
     <state x="1612" y="44" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1603553387657" />
+    <state x="191" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604759505672">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="191" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604759505672" />
     <state x="2094" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603553066624">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
@@ -306,10 +265,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="255" y="159" key="run.anything.popup/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603268516534" />
-    <state x="1852" y="70" width="1181" height="1478" key="search.everywhere.popup" timestamp="1604057199665">
-      <screen x="1366" y="0" width="1920" height="1040" />
+    <state x="346" y="49" width="840" height="1034" key="search.everywhere.popup" timestamp="1604923783824">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="840" height="1034" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1603130328010" />
+    <state x="346" y="49" width="840" height="1034" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604923783824" />
     <state x="1852" y="70" width="1181" height="1478" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1604057199665" />
   </component>
 </project>

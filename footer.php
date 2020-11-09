@@ -8,8 +8,7 @@
                             <div class="footer">
                                 <h2 class="title__line--2">ABOUT US</h2>
                                 <div class="ft__details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
-                                    <div class="ft__social__link">
+                                     <div class="ft__social__link">
                                         <ul class="social__link">
                                             <li><a href="#"><i class="icon-social-twitter icons"></i></a></li>
 
@@ -82,7 +81,7 @@
                                     <div class="news__input">
                                         <input type="text" placeholder="Your Mail*">
                                         <div class="send__btn">
-                                            <a class="fr__btn" href="#">Send Mail</a>
+                                            <a class="fr__btn" href="<?php  echo SITE_PATH ?>contacts.php">Send Mail</a>
                                         </div>
                                     </div>
                                     
