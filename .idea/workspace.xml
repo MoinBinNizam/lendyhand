@@ -26,33 +26,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eec7b99-ccd8-4d40-b24f-5b17283cbe62" name="Default Changelist" comment="code_updated+file_added">
-      <change afterPath="$PROJECT_DIR$/checkout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/bg/02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/service/272685520_electrician.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/service/760231134_home shifting.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/service/793399008_hair cut.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_order_details.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thank_you.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/order_master.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/order_master_detail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/connection.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/connection.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/manage_services.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/manage_services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/top.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/top.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bg/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/bg/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bg/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage_cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage_cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/service/607891537_electrician.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/service/655036396_sd.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/service/832711808_placeholder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/service/875523401_Cleaning-Job.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/service/882347720_15209.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/service/889129035_15209.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/service/958486157_HCI_Final.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/service/976787595_15209.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/service/_1images.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/my_order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/top.php" beforeDir="false" afterPath="$PROJECT_DIR$/top.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,12 +65,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\001085620\admin" />
       <recent name="C:\xampp\htdocs\001085620" />
     </key>
   </component>
@@ -120,7 +105,8 @@
       <workItem from="1602783480173" duration="860000" />
       <workItem from="1603116655912" duration="109985000" />
       <workItem from="1604496238560" duration="259000" />
-      <workItem from="1604496618124" duration="68200000" />
+      <workItem from="1604496618124" duration="68362000" />
+      <workItem from="1605209260116" duration="19620000" />
     </task>
     <task id="LOCAL-00001" summary="js added">
       <created>1601898021879</created>
@@ -171,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604568892079</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="code_updated+file_added">
+      <created>1604928966379</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604928966395</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,10 +237,10 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="1738" y="150" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1601693191619" />
-    <state x="175" y="31" key="Vcs.Push.Dialog.v2" timestamp="1604569121654">
+    <state x="175" y="31" key="Vcs.Push.Dialog.v2" timestamp="1604928991968">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="175" y="31" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604569121654" />
+    <state x="175" y="31" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604928991968" />
     <state x="1612" y="44" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1603553387657" />
     <state x="191" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604759505672">
       <screen x="0" y="0" width="1366" height="728" />

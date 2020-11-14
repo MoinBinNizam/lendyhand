@@ -18,7 +18,7 @@ $totalService= $obj->totalService();
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>LendyHand - At your service - Get your problem fixed </title>
+    <title>LendyHand - At your service - Get home service by one click </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -46,10 +46,10 @@ $totalService= $obj->totalService();
                             <a href="index.php"><img src="images/logo/1.png" alt="logo images"></a>
                     </div>
                 </div>
-                <div class="col-md-7 col-lg -7 col-sm-5 col-xs-3">
+                <div class="col-md-6 col-lg -7 col-sm-5 col-xs-3">
                     <nav class="main__menu__nav hidden-xs hidden-sm">
                         <ul class="main__menu">
-                            <li class="drop"><a href="index.php">Home</a></li> 
+
                                 <?php
                                 foreach($cat_array as $list){
                                 ?>
@@ -78,7 +78,7 @@ $totalService= $obj->totalService();
                         </nav>
                     </div>  
                 </div>
-                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-4">
+                <div class="col-md-4 col-lg-3 col-sm-4 col-xs-4">
                     <div class="header__right">
                         <div class="header__account">
                             <?php

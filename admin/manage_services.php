@@ -78,7 +78,7 @@ if($msg ==''){
    if(isset($_GET['id']) && $_GET['id'] != ''){
       if($_FILES['img']['name'] != ''){
          $img = rand(111111111,999999999).'_'.$_FILES['img']['name'];
-         move_uploaded_file($_FILES['img']['tmp_name'],PRODUCT_IMAGE_SERVER_PATH.$img);
+         move_uploaded_file($_FILES['img']['tmp_name'],SERVICE_IMAGE_SERVER_PATH.$img);
         
          $update_sql="update services set categories_id= '$categories_id',name= '$name',
          unit_price= '$unit_price',total_price= '$total_price',qty= '$qty',short_desc= '$short_desc',
@@ -92,7 +92,7 @@ if($msg ==''){
    }else{
       //Image Upload
       $img = rand(111111111,999999999).'_'.$_FILES['img']['name'];
-      move_uploaded_file($_FILES['img']['tmp_name'],PRODUCT_IMAGE_SERVER_PATH.$img);
+      move_uploaded_file($_FILES['img']['tmp_name'],SERVICE_IMAGE_SERVER_PATH.$img);
 
 
          mysqli_query ($con, "insert into services(

@@ -41,7 +41,7 @@
             <a href="services.php" > Service Master</a>
         </li>
         <li class="menu-item-has-children dropdown">
-            <a href="#" > Order Master</a>
+            <a href="order_master.php" > Order Master</a>
         </li>
         <li class="menu-item-has-children dropdown">
             <a href="users.php" > User Master</a>

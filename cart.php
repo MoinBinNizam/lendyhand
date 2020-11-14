@@ -41,13 +41,15 @@ require('top.php');
                                 </thead>
                                 <tbody>
                                 <?php
+
                                 foreach ($_SESSION['cart'] as $key=>$val) {
-                                    $serviceArr=get_services($con,'','',$key);
-                                    $name=$serviceArr[0]['name'];
-                                    $unit_price=$serviceArr[0]['unit_price'];
-                                    $total_price=$serviceArr[0]['total_price'];
-                                    $img=$serviceArr[0]['img'];
-                                    $qty=$val['qty'];
+                                    $serviceArr = get_services($con, '', '', $key);
+                                    $name = $serviceArr[0]['name'];
+                                    $unit_price = $serviceArr[0]['unit_price'];
+                                    $total_price = $serviceArr[0]['total_price'];
+                                    $img = $serviceArr[0]['img'];
+                                    $qty = $val['qty'];
+
                                 ?>
                                 <tr>
                                     <td class="service-thumbnail"><a href="#"><img src="<?php echo SERVICE_IMAGE_SITE_PATH.$img?>" /></a></td>

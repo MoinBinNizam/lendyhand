@@ -451,7 +451,7 @@ a,
 button {
     text-decoration: none;
     outline: none!important;
-    color: #878787;
+    color: white;
     -webkit-transition: all .25s ease;
     transition: all .25s ease
 }
@@ -620,6 +620,7 @@ canvas {
 }
 .order-table .badge-delete {
     background: #FA0F0F
+
 }
 .order-table .badge-edit {
     background: #0FA5FA
@@ -738,7 +739,7 @@ canvas {
 aside.left-panel {
     background: #fff;
     height: 100vh;
-    padding: 0;
+    padding-top: 30px;
     vertical-align: top;
     width: 280px;
     -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, .08);
@@ -1176,7 +1177,7 @@ aside.left-panel:hover {
     box-shadow: none;
     clear: both;
     padding: 0 30px;
-    height: 55px;
+    height: 75px;
     position: fixed;
     left: 280px;
     left: 0;
