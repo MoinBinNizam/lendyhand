@@ -61,7 +61,7 @@ $get_services = get_services($con,'',$cat_id);
                                         </a>
                                     </div>
                                     <div class="fr__service__inner">
-                                        <h4><a href="service-details.html"><?php echo $list['name'] ?></a></h4>
+                                        <h4><a href="services.php?id=<?php echo $list['id'] ?>"><?php echo $list['name'] ?></a></h4>
                                         <ul class="fr__pro__prize">
                                             <li class="old__prize"><?php echo $list['unit_price'] ?></li>
                                             <li><?php echo $list['total_price'] ?></li>
@@ -84,43 +84,6 @@ $get_services = get_services($con,'',$cat_id);
             </div>
         </section>
         <!-- End service Grid -->
-        <!-- Start Brand Area -->
-        <div class="htc__brand__area bg__cat--4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="ht__brand__inner">
-                            <ul class="brand__list owl-carousel clearfix">
-                                <li><a href="#"><img src="images/brand/1.png" alt="brand images"></a></li>
-                                <li><a href="#"><img src="images/brand/2.png" alt="brand images"></a></li>
-                                <li><a href="#"><img src="images/brand/3.png" alt="brand images"></a></li>
-                                <li><a href="#"><img src="images/brand/4.png" alt="brand images"></a></li>
-                                <li><a href="#"><img src="images/brand/5.png" alt="brand images"></a></li>
-                                <li><a href="#"><img src="images/brand/5.png" alt="brand images"></a></li>
-                                <li><a href="#"><img src="images/brand/1.png" alt="brand images"></a></li>
-                                <li><a href="#"><img src="images/brand/2.png" alt="brand images"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Brand Area -->
-        <!-- Start Banner Area -->
-        <div class="htc__banner__area">
-            <ul class="banner__list owl-carousel owl-theme clearfix">
-                <li><a href="service-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
-                <li><a href="service-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
-                <li><a href="service-details.html"><img src="images/banner/bn-3/3.jpg" alt="banner images"></a></li>
-                <li><a href="service-details.html"><img src="images/banner/bn-3/4.jpg" alt="banner images"></a></li>
-                <li><a href="service-details.html"><img src="images/banner/bn-3/5.jpg" alt="banner images"></a></li>
-                <li><a href="service-details.html"><img src="images/banner/bn-3/6.jpg" alt="banner images"></a></li>
-                <li><a href="service-details.html"><img src="images/banner/bn-3/1.jpg" alt="banner images"></a></li>
-                <li><a href="service-details.html"><img src="images/banner/bn-3/2.jpg" alt="banner images"></a></li>
-            </ul>
-        </div>
-        <!-- End Banner Area -->
-        <!-- End Banner Area -->
 
 <?php
 require('footer.php');

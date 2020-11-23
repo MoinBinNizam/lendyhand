@@ -40,11 +40,6 @@ require('top.php');
         </div>
     </div>
 </div>
-
-
-Shipped
-
-
 <?php
 require('footer.php');
 

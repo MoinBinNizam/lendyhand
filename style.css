@@ -2862,6 +2862,7 @@ a.shipping-calculator-button:hover{
 .contact-box.name input {
     margin: 0 20px;
     width: 100%;
+    font-size: 19px;
 }
 
 /*---------------------------------------
@@ -2904,6 +2905,10 @@ a.shipping-calculator-button:hover{
 }
 .wishlist-table table .wishlist-in-stock {
     color: #444;
+}
+.wishlist-table.service-name{
+    font-size: 20px;
+    color: red;
 }
 .wishlist-table table .service-add-to-cart > a {
     background: #252525 none repeat scroll 0 0;
@@ -3604,8 +3609,8 @@ ul.htc__instagram__posts.owl-carousel li img {
     font-size: 20px;
 }
 p.form-messege {
-    color: red;
-    /*margin-top: 15px;*/
+    color: #21cf19;
+    margin-top: 15px;
     font-size: 18px;
     font-weight: bold;
 }

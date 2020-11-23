@@ -42,7 +42,7 @@
          <div class="container">
             <div class="login-content">
                <div class="login-form mt-150">
-               <strong><h1 >Login</h1></strong>
+               <strong><h1 >Admin Login</h1></strong>
                   <form method='POST'>
                      <div class="form-group">
                         <label>Email address</label>

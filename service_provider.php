@@ -7,10 +7,10 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
     die();
 }
 
-?>
+//?>
     <!-- Start Bradcaump area -->
     <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat scroll center center / cover ;">
-        <div class="ht__bradcaump__wrap">
+    <div class="ht__bradcaump__wrap">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
@@ -18,7 +18,7 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
                             <nav class="bradcaump-inner">
                                 <a class="breadcrumb-item" href="index.php">Home</a>
                                 <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
-                                <span class="breadcrumb-item active">Login/Register</span>
+                                <span class="breadcrumb-item active">Service provider registration</span>
                             </nav>
                         </div>
                     </div>
@@ -30,6 +30,11 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
     <section class="htc__contact__area ptb--100 bg__white">
         <div class="container">
             <div class="row">
+                <div class="headline">
+                    <h1>Become A Proud Service Provider</h1>
+                    <h4>It's simple!</h4>
+
+                </div>
                 <div class="col-md-6">
                     <div class="contact-form-wrap mt--60">
                         <div class="col-xs-12">
@@ -82,7 +87,7 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
                                 </div>
                                 <div class="single-contact-form">
                                     <div class="contact-box name">
-                                        <input type="email" name="email" id="email"  placeholder="Your Email*" >
+                                        <input type="email" name="email" id="email"  placeholder="Your Email Address*" >
                                     </div>
                                     <span class="field_error" id="email_error"></span>
                                 </div>
@@ -98,7 +103,32 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
                                     </div>
                                     <span class="field_error" id="password_error"></span>
                                 </div>
-
+                                <div class="single-contact-form">
+                                    <div class="contact-box name">
+                                        <input  type="text" name="address" id="address" placeholder="Your Current Address*" >
+                                    </div>
+                                    <span class="field_error" id="address_error"></span>
+                                </div>
+                                <div class="single-contact-form">
+                                    <div class="contact-box name">
+                                        <input type="text" name="work_location" id="work_location" placeholder="Your Work Location*" >
+                                    </div>
+                                    <span class="field_error" id="work_location_error"></span>
+                                </div>
+                                <div class="single-contact-form">
+                                    <div class="contact-box name">
+                                        <input type="text" name="service" id="service" placeholder="Your Service Name*" >
+                                    </div>
+                                    <span class="field_error" id="service_error"></span>
+                                </div>
+                                <div class="single-contact-form">
+                                    <div class="contact-box name">
+                                        <label for="categories" class=" form-control-label">NID Photo
+                                        </label>
+                                        <input type="file" name="nid" id="nid" class="form-control">
+                                    </div>
+                                    <span class="field_error" id="nid_error"></span>
+                                </div>
                                 <div class="contact-btn">
                                     <button type="button" class="fv-btn" onclick="user_register()" >Register</button>
                                 </div>

@@ -108,8 +108,8 @@ if(isset($_POST['submit'])) {
                                                         <p class="require">* Required fields</p>
                                                         <div class="dark-btn">
                                                             <button type="button" class="fv-btn" onclick="user_login()">Login</button>
-<!--                                                            <div class="form-output login_msg">-->
-<!--                                                                <p class="form-messege"></p>-->
+<!--                                                                <div class="form-output login_msg">-->
+<!--                                                                    <p class="form-messege"></p>-->
                                                         </div>
 
                                                     </form>
@@ -139,6 +139,11 @@ if(isset($_POST['submit'])) {
                                                         </div>
                                                         <div class="dark-btn">
                                                             <button type="button" class="fv-btn" onclick="user_register()" >Register</button>
+                                                            <div class="form-output register_msg">
+                                                                <p class="form-messege"></p>
+
+
+
                                                         </div>
                                                     </form>
                                                 </div>

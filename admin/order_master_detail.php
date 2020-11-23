@@ -1,6 +1,12 @@
 <?php
 require ('top.inc.php');
 $order_id=get_safe_value($con,$_GET['id']);
+if(isset($_POST['update_order_status'])){
+   $update_order_status= $_POST['update_order_status'];
+   mysqli_query($con, "update `order` set order_status='$update_order_status' where id='$order_id' " );
+
+
+}
 
 ?>
     <div class="content pb-0">
@@ -72,13 +78,13 @@ $order_id=get_safe_value($con,$_GET['id']);
                                     echo $order_status_arr['name'];
                                     ?>
                                     <div>
-                                        <form>
+                                        <form method="post">
                                             <select class="form-control" name="update_order_status">
                                                 <option>Select Status</option>
                                                 <?php
                                                 $res=mysqli_query($con,"select * from order_status");
                                                 while($row=mysqli_fetch_assoc($res)){
-                                                    if($row['id'] == $order_status_id){
+                                                    if($row['id'] == $categories_id){
                                                         echo "<option selected value=".$row['id'].">".$row['name']."</option>";
                                                     }else{
                                                     }
@@ -86,7 +92,7 @@ $order_id=get_safe_value($con,$_GET['id']);
                                                 }
                                                 ?>
                                             </select>
-                                            <input type="submit" class = form-control>
+                                            <input type="submit" class ="form-control">
                                         </form>
                                     </div>
                                 </div>

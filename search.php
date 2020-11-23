@@ -1,9 +1,9 @@
 <?php
 require('top.php');
-//$str=mysqli_real_escape_string($con, $_GET['str']);
-//if($str !=''){
-//    $get_services = get_services($con,'',$cat_id);
-//}
+$str=mysqli_real_escape_string($con, $_GET['str']);
+if($str !=''){
+    $get_services = get_services($con,'','','',$str);
+}
 
 ?>
 <div class="body__overlay"></div>
@@ -19,6 +19,8 @@ require('top.php');
                                   <a class="breadcrumb-item" href="index.php">Home</a>
                                   <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
                                   <span class="breadcrumb-item active">Search</span>
+                                    <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
+                                    <span class="breadcrumb-item active"><?php echo $str ?> </span>
                                 </nav>
                             </div>
                         </div>

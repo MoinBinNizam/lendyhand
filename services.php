@@ -1,7 +1,7 @@
 <?php
 require('top.php');
-$service_id=mysqli_real_escape_string($con, $_GET['id']);
-$get_services = get_services($con,'','',$service_id);	
+$services_id=mysqli_real_escape_string($con, $_GET['id']);
+$get_services = get_services($con,'','',$services_id);
 ?>
 <!-- Start Bradcaump area -->
         <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat scroll center center / cover ;">

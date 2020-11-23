@@ -12,7 +12,7 @@ $order_id=get_safe_value($con,$_GET['id']);
                             <nav class="bradcaump-inner">
                                 <a class="breadcrumb-item" href="index.php">Home</a>
                                 <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
-                                <span class="breadcrumb-item active">Thank You</span>
+                                <span class="breadcrumb-item active">Your order details</span>
                             </nav>
                         </div>
                     </div>
@@ -67,9 +67,30 @@ $order_id=get_safe_value($con,$_GET['id']);
                                         </tr>
 
                                     </tbody>
+
                                 </table>
+
                             </div>
                         </form>
+
+                    </div>
+
+
+                    <div class="main">
+                        <div class="content">
+                            <div class="section_group">
+                                <div class="payment">
+                                    <h2>Choose Payment Option</h2>
+                                    <a href="?orderid=order">Offline Payment</a>
+<!--                                    <a href="pay_online.php">Online Payment</a>-->
+
+                                </div>
+                                <div class="back">
+                                    <a href="my_order.php">Back</a>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

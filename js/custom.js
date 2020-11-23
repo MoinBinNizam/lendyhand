@@ -43,6 +43,7 @@ jQuery('#frmContactus').on('submit',function(e){
     });
     e.preventDefault();
 });
+//User reg validation
 function user_register(){
     jQuery('.field_error').html('');
     var name=jQuery("#name").val();
@@ -82,7 +83,7 @@ function user_register(){
     }
 }
 
-//Login
+////User login validation
 function user_login(){
     jQuery('.field_error').html('');
     var email=jQuery("#login_email").val();
@@ -131,4 +132,61 @@ function manage_cart(sid,type){
             jQuery('.htc__qua').html(result);
         }
     });
+}
+//Service provider register
+function user_register(){
+    jQuery('.field_error').html('');
+    var name=jQuery("#name").val();
+    var email=jQuery("#email").val();
+    var mobile=jQuery("#mobile").val();
+    var password=jQuery("#password").val();
+    var address=jQuery("#address").val();
+    var work_location=jQuery("#work_location").val();
+    var service=jQuery("#service").val();
+    var nid=jQuery("#nid").val();
+    var is_error='';
+
+    if(name==""){
+        jQuery('#name_error').html('Please enter Name');
+        is_error='yes';
+    } if(email==""){
+        jQuery('#email_error').html('Please enter Email');
+        is_error='yes';
+    } if(mobile==""){
+        jQuery('#mobile_error').html('Please enter Mobile');
+        is_error='yes';
+    } if(password==""){
+        jQuery('#password_error').html('Please enter Password');
+        is_error='yes';
+    }if(address==""){
+        jQuery('#address_error').html('Please enter Address');
+        is_error='yes';
+
+    } if(work_location==""){
+        jQuery('#work_location_error').html('Please enter Work Location');
+        is_error='yes';
+    } if(service==""){
+        jQuery('#service_error').html('Please enter Service');
+        is_error='yes';
+
+    } if(nid==""){
+        jQuery('#nid_error').html('Please enter NID');
+        is_error='yes';
+    }if(is_error==''){
+        jQuery.ajax({
+            url:'service_provider_reg_submit.php',
+            type:'post',
+            data:'name='+name+'&email='+email+'&mobile='+mobile+'&password='+password
+                +'&address='+address+'&work_location='+work_location+'&service='+service+'&mobile='+nid,
+            success:function(result){
+                if(result=='email_present'){
+                    jQuery('#email_error').html('Email id already present') ;
+                }
+                if(result=='insert'){
+                    jQuery('.register_msg p').html('Thank you for registration') ;
+
+                }
+            }
+        });
+    }
 }

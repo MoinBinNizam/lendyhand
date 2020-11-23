@@ -1,6 +1,13 @@
 <?php
 require('top.php');
 //pr($_SESSION['cart']);
+if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']!=='yes'){
+    header('location:login.php');
+    die();
+}
+
+ob_end_flush();
+
 ?>
     <!-- Start Bradcaump area -->
     <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat scroll center center / cover ;">
@@ -41,7 +48,7 @@ require('top.php');
                                 </thead>
                                 <tbody>
                                 <?php
-
+                                if(isset($_SESSION['cart'])){
                                 foreach ($_SESSION['cart'] as $key=>$val) {
                                     $serviceArr = get_services($con, '', '', $key);
                                     $name = $serviceArr[0]['name'];
@@ -49,6 +56,7 @@ require('top.php');
                                     $total_price = $serviceArr[0]['total_price'];
                                     $img = $serviceArr[0]['img'];
                                     $qty = $val['qty'];
+
 
                                 ?>
                                 <tr>
@@ -68,6 +76,7 @@ require('top.php');
                                 </tr>
                                     <?php
                                 }
+                                    }
                                     ?>
                                 </tbody>
                             </table>
