@@ -1,5 +1,7 @@
 .field_error{
     color: red;
+    font-size: 19px;
+
 }
 .form-messege p{
     color: red;
@@ -34,3 +36,282 @@
     color: green;
     font-size: 30px;
 }
+/* Dropdown Button */
+.dropbtn {
+    color: #c43b68;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 15px;
+    padding-right: 20px;
+    font-size: 14px;
+    position: relative;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+
+}
+.dropbtn :hover a{
+    color: #000000;
+}
+
+
+    /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #c43b68;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.search {
+    position: relative;
+    display: inline-block;
+    size: auto;
+}
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+    background: red;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav .search-container {
+        float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+.top-menu{
+    background-color: #c43b68;
+    font-size: 14px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 15px;
+    padding-right: 20px;
+    position: relative;
+    text-transform: uppercase;
+    margin-left: 100px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    height: auto;
+    width: auto;
+
+}
+.header-login{
+    background-color: #c43b68;
+    font-size: 14px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 15px;
+    padding-right: 20px;
+    position: relative;
+    text-transform: uppercase;
+    margin-right: 100px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+.header-login a{
+    color: #fff;
+}
+.header-login:hover {
+    background-color: #1C1315;
+}
+.my_order:hover {
+    background-color: #1C1315;
+}
+
+
+
+
+.make_payment .payment_button {
+}
+.section_group{
+    min-width: 300px;
+    min-height: 200px;
+    border: 1px solid #777774;
+    margin-top: 20px;
+}
+.payment{
+    min-width: 150px;
+    min-height: 150px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding:50px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: block;
+}
+.payment p{
+    font-family: 'Poppins', sans-serif;
+    color: #d81d1d;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 24px;
+}
+.payment h2{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+.payment a{
+    background-color: #c43b68;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 20px ;
+    margin-left: 19px ;
+    width: 50%;
+}
+.back a{
+    width: 160px;
+    margin: 5px auto 0;
+    padding:7px 0;
+    text-align: center;
+    display: block;
+    background-color: #2d5f7c;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+
+
+
+}
+.division{
+    width: 50%;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+
+}
+.tblone{
+    float: left;
+    width: 550px;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+
+}
+.tblone tr td{
+    text-align: justify;
+
+}
+.tbltwo{
+    float: right;
+    text-align: left;
+    width: 50%;
+    border: 2px solid #ddd;
+    margin-right: 14px;
+    margin-top: 12px;
+}
+.tbltwo tr td{
+    text-align: justify;
+    padding: 5px 10px;
+
+}
+p, label {
+    font: 1rem 'Fira Sans', sans-serif;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+input {
+    margin: .4rem;
+}
+.row{
+    color: #010101;
+}
+.headline {
+    color: #c43b68;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+.headline h1{
+    font-size: 35px;
+    color: #c43b68;
+    margin-bottom: 15px;
+}
+.headline h4{
+    font-size:20px;
+}
+.pro__tab__content__inner{
+    font-size: 18px;
+}
+.form-control-label{
+    color: black;
+    
+}
+.form-control{
+
+    color: #c43b68;
+    background-color: #192024; 
+
+}
+.menumenu__container {
+    font-weight: bold;
+}
+.header__account a{
+    color: #c43b68;
+    font-size: 14px;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+/* color: #c43b68;
+    font-size: 19px;
+    margin-right: 20px;
+    padding-right: 20px;
+    position: relative; */
+.headline h1 {
+        font-size: 35px;
+        color: #c43b68;
+        margin-bottom: 15px;
+    }

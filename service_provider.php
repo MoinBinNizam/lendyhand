@@ -43,7 +43,7 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
                             </div>
                         </div>
                         <div class="col-xs-12">
-                            <form id="login-form"  method="post">
+                            <form    method="post">
                                 <div class="single-contact-form">
                                     <div class="contact-box name">
                                         <input type="email" name="login_email" id="login_email"  placeholder="Your Email*" style="width:100%">
@@ -58,7 +58,10 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
                                 </div>
 
                                 <div class="contact-btn">
-                                    <button type="button" class="fv-btn" onclick="user_login()">Login</button>
+                                    <!-- <input type="submit" name="login" class="fv-btn" id="login"> -->
+                                    <button type="submit" name="submit" class="fv-btn">Sign in</button>
+              
+                                    <!-- <button type="button" class="fv-btn" onclick="user_login()">Login</button> -->
                                 </div>
                             </form>
                             <div class="form-output login_msg">
@@ -78,16 +81,34 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
                             </div>
                         </div>
                         <div class="col-xs-12">
-                            <form id="register-form"  method="post">
+                            <form method="POST" action="service_provider_profile.php" onsubmit="return validation()">
+                            <div class="single-contact-form">
+                            <div class="dropdown">
+                                <button class="dropbtn">All Services
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <?php
+                                        foreach($cat_array as $list){
+                                            ?>
+                                            <li><a href="categories.php?id=<?php echo $list['id']?> ">
+                                                    <?php echo $list['categories'] ?> </a></li>
+                                            <?php
+                                        }
+                                        ?> </a>
+
+                                </div>
+                            </div>
+                                    </div>
                                 <div class="single-contact-form">
                                     <div class="contact-box name">
-                                        <input type="text" name="name" id="name" placeholder="Your Name*" >
+                                        <input type="text" name="name" id="username" placeholder="Your Name*" >
                                     </div>
-                                    <span class="field_error" id="name_error"></span>
+                                    <span class="field_error" id="username_error"></span>
                                 </div>
                                 <div class="single-contact-form">
                                     <div class="contact-box name">
-                                        <input type="email" name="email" id="email"  placeholder="Your Email Address*" >
+                                        <input type="email" name="email" class="email_checking" id="email"  placeholder="Your Email Address*" >
                                     </div>
                                     <span class="field_error" id="email_error"></span>
                                 </div>
@@ -112,14 +133,9 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
                                 <div class="single-contact-form">
                                     <div class="contact-box name">
                                         <input type="text" name="work_location" id="work_location" placeholder="Your Work Location*" >
+                                    
                                     </div>
                                     <span class="field_error" id="work_location_error"></span>
-                                </div>
-                                <div class="single-contact-form">
-                                    <div class="contact-box name">
-                                        <input type="text" name="service" id="service" placeholder="Your Service Name*" >
-                                    </div>
-                                    <span class="field_error" id="service_error"></span>
                                 </div>
                                 <div class="single-contact-form">
                                     <div class="contact-box name">
@@ -130,10 +146,13 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
                                     <span class="field_error" id="nid_error"></span>
                                 </div>
                                 <div class="contact-btn">
-                                    <button type="button" class="fv-btn" onclick="user_register()" >Register</button>
+                                    <!-- <button type="button" class="fv-btn" onclick="sProvider_register()" >Register</button> -->
+                                    <input type="submit" name="register" class="fv-btn" id="registration">
+                                    
                                 </div>
                             </form>
                             <div class="form-output register_msg">
+
                                 <p class="form-messege field_error"></p>
                             </div>
                         </div>

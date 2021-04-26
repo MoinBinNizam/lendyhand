@@ -10,15 +10,13 @@
                                 <div class="ft__details">
                                      <div class="ft__social__link">
                                         <ul class="social__link">
-                                            <li><a href="#"><i class="icon-social-twitter icons"></i></a></li>
+                                            <li><a href="https://twitter.com/" target="_blank"><i class="icon-social-twitter icons"></i></a></li>
 
-                                            <li><a href="#"><i class="icon-social-instagram icons"></i></a></li>
+                                            <li><a href="https://www.instagram.com/" target="_blank"><i class="icon-social-instagram icons"></i></a></li>
 
-                                            <li><a href="#"><i class="icon-social-facebook icons"></i></a></li>
+                                            <li><a href="https://www.facebook.com/" target="_blank"><i class="icon-social-facebook icons"></i></a></li>
 
-                                            <li><a href="#"><i class="icon-social-google icons"></i></a></li>
-
-                                            <li><a href="#"><i class="icon-social-linkedin icons"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/" target="_blank"><i class="icon-social-linkedin icons"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -31,11 +29,8 @@
                                 <h2 class="title__line--2">information</h2>
                                 <div class="ft__inner">
                                     <ul class="ft__list">
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Delivery Information</a></li>
-                                        <li><a href="#">Privacy & Policy</a></li>
-                                        <li><a href="#">Terms  & Condition</a></li>
-                                        <li><a href="#">Manufactures</a></li>
+                                        <li><a href="about_us.php">About us</a></li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -47,11 +42,10 @@
                                 <h2 class="title__line--2">my account</h2>
                                 <div class="ft__inner">
                                     <ul class="ft__list">
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="cart.html">My Cart</a></li>
-                                        <li><a href="#">Login</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="login.php">My Account</a></li>
+                                        <li><a href="cart.php">My Cart</a></li>
+                                        <li><a href="login.php">Login</a></li>
+                                        <li><a href="checkout.php">Checkout</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -63,11 +57,11 @@
                                 <h2 class="title__line--2">Our service</h2>
                                 <div class="ft__inner">
                                     <ul class="ft__list">
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="cart.html">My Cart</a></li>
-                                        <li><a href="#">Login</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="login.php">My Account</a></li>
+                                        <li><a href="cart.php">My Cart</a></li>
+                                        <li><a href="login.php">Login</a></li>
+                                        <li><a href="checkout.php">Checkout</a></li>
+                                        <li><a href="contacts.php">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -79,7 +73,7 @@
                                 <h2 class="title__line--2">NEWSLETTER </h2>
                                 <div class="ft__inner">
                                     <div class="news__input">
-                                        <input type="text" placeholder="Your Mail*">
+
                                         <div class="send__btn">
                                             <a class="fr__btn" href="<?php  echo SITE_PATH ?>contacts.php">Send Mail</a>
                                         </div>
@@ -126,6 +120,7 @@
     <script src="js/waypoints.min.js"></script>
     <!-- Main js file that contents all jQuery plugins activation. -->
     <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 

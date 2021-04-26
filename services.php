@@ -49,8 +49,8 @@ $get_services = get_services($con,'','',$services_id);
                             <div class="ht__service__dtl">
                                 <h2><?php echo $get_services['0']['name'] ?></h2>
                                 <ul  class="pro__prize">
-                                    <li class="old__prize"><?php echo $get_services['0']['unit_price'] ?></li>
-                                    <li><?php echo $get_services['0']['total_price'] ?></li>
+                                    <li class="old__prize">Tk. <?php echo $get_services['0']['unit_price'] ?></li>
+                                    <!-- <li><?php echo $get_services['0']['total_price'] ?></li> -->
                                 </ul>
                                 <p class="pro__info"><?php echo $get_services['0']['short_desc'] ?></p>
                                 <div class="ht__pro__desc">

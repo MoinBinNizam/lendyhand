@@ -35,16 +35,19 @@
     <ul class="nav navbar-nav">
         <li class="menu-title">Menu</li>
         <li class="menu-item-has-children dropdown">
-            <a href="categories.php" > Categories Master</a>
+            <a href="manage_categories.php" > Manage Category</a>
         </li>
         <li class="menu-item-has-children dropdown">
-            <a href="services.php" > Service Master</a>
+            <a href="manage_services.php" > Manage Service</a>
         </li>
         <li class="menu-item-has-children dropdown">
-            <a href="order_master.php" > Order Master</a>
+            <a href="manage_orders.php" >Manage Order </a>
         </li>
         <li class="menu-item-has-children dropdown">
-            <a href="users.php" > User Master</a>
+            <a href="users.php" > Manage User</a>
+        </li>
+        <li class="menu-item-has-children dropdown">
+            <a href="service_provider.php" > Manage Service Provider</a>
         </li>
         <li class="menu-item-has-children dropdown">
             <a href="contact_us.php" > Contact Us</a>

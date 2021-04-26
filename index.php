@@ -3,58 +3,40 @@ require('top.php');
 
 ?>
 <div class="body__overlay"></div>
-        <div class="slider__container slider--one bg__cat--3">
-            <div class="slide__container slider__activation__wrap owl-carousel">
-                <!-- Start Single Slide -->
-                <div class="single__slide animation__style01 slider__fixed--height">
-                    <div class="container">
-                        <div class="row align-items__center">
-                            <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
-                                <div class="slide">
-                                    <div class="slider__inner">
-                                        <h2>collection 2018</h2>
-                                        <h1>NICE CHAIR</h1>
-                                        <div class="cr__btn">
-                                            <a href="cart.php">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
-                                <div class="slide__thumb">
-                                    <img src="images/slider/fornt-img/1.png" alt="slider images">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Slide -->
-                <!-- Start Single Slide -->
-                <div class="single__slide animation__style01 slider__fixed--height">
-                    <div class="container">
-                        <div class="row align-items__center">
-                            <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
-                                <div class="slide">
-                                    <div class="slider__inner">
-                                        <h2>collection 2018</h2>
-                                        <h1>NICE CHAIR</h1>
-                                        <div class="cr__btn">
-                                            <a href="cart.php">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
-                                <div class="slide__thumb">
-                                    <img src="images/slider/fornt-img/2.png" alt="slider images">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Slide -->
-            </div>
-        </div>
+<!--    <section class="ftr__service__area ptb--100">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="menumenu__container clearfix"></div>-->
+<!--                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">-->
+<!--                        <div class="topnav">-->
+<!--                            <div class="dropdown">-->
+<!--                                <button class="dropbtn"><strong>Select your Area</strong> </button>-->
+<!--                                    <div class="dropdown-content">-->
+<!--                                        <a href="#">Adabor</a>-->
+<!--                                        <a href="#">Banani</a>-->
+<!--                                        <a href="#">Badda</a>-->
+<!--                                        <a href="#">Dhanmondi</a>-->
+<!--                                        <a href="#">Farmgate</a>-->
+<!--                                        <a href="#">Gulshan</a>-->
+<!--                                        <a href="#">Motijhil</a>-->
+<!--                                        <a href="#">Uttora</a>-->
+<!--                                        <a href="#">Gulshan</a>-->
+<!--                                    </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">-->
+<!--                   <div class="search">-->
+<!--                    <form class="form-inline mr-auto">-->
+<!--                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+<!--                        <button class="btn btn-unique btn-rounded btn-sm my-0" type="submit">Search</button>-->
+<!--                    </form>-->
+<!---->
+<!--                </div>-->
+<!---->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
         <!-- Start Slider Area -->
         <!-- Start Category Area -->
         <section class="htc__category__area ptb--100">
@@ -63,7 +45,7 @@ require('top.php');
                     <div class="col-xs-12">
                         <div class="section__title--2 text-center">
                             <h2 class="title__line">New Arrivals Services</h2>
-                            <p>But I must explain to you how all this mistaken idea</p>
+                            <p>Explore new arrival services. Get on demand home services by one click </p>
                         </div>
                     </div>
                 </div>
@@ -71,12 +53,8 @@ require('top.php');
                     <div class="row">
                         <div class="service__list clearfix mt--30">
                              <?php
-
                              $get_services = get_services($con,4);
                             foreach($get_services as $list){
-
-                           
-                             
                              ?>
                             <!-- Start Single Category -->
                             <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
@@ -89,8 +67,8 @@ require('top.php');
                                     <div class="fr__service__inner">
                                         <h4><a href="services.php"><?php echo $list['name'] ?></a></h4>
                                         <ul class="fr__pro__prize">
-                                            <li class="old__prize"><?php echo $list['unit_price'] ?></li>
-                                            <li><?php echo $list['total_price'] ?></li>
+                                            <!-- <li class="old__prize"><?php echo $list['unit_price'] ?></li>
+                                            <li><?php echo $list['total_price'] ?></li> -->
                                         </ul>
                                     </div>
                                 </div>
@@ -110,120 +88,35 @@ require('top.php');
                     <div class="col-xs-12">
                         <div class="section__title--2 text-center">
                             <h2 class="title__line">Best Seller</h2>
-                            <p>But I must explain to you how all this mistaken idea</p>
+                            <p>People takes these services often. Get on demand home services by one click instantly. Save your valuable time </p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="service__wrap clearfix">
-                        <!-- Start Single Category -->
-                        <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    <a href="product-details.html">
-                                        <img src="images/product/9.jpg" alt="service images">
-                                    </a>
-                                </div>
-                                <div class="fr__hover__info">
-                                    <ul class="service__action">
-                                        <li><a href="product.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fr__service__inner">
-                                    <h4><a href="product-details.html">Special Wood Basket</a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul>
+                    <div class="service__list clearfix mt--30">
+                        <?php
+                        $get_services = get_services($con,4);
+                        foreach($get_services as $list){
+                            ?>
+                            <!-- Start Single Category -->
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="category">
+                                    <div class="ht__cat__thumb">
+                                        <a href="services.php?id=<?php echo $list['id'] ?>">
+                                            <img src="<?php echo SERVICE_IMAGE_SITE_PATH.$list['img'] ?>" alt="Service images">
+                                        </a>
+                                    </div>
+                                    <div class="fr__service__inner">
+                                        <h4><a href="services.php"><?php echo $list['name'] ?></a></h4>
+                                        <ul class="fr__pro__prize">
+                                            <!-- <li class="old__prize"><?php echo $list['unit_price'] ?></li>
+                                            <li><?php echo $list['total_price'] ?></li> -->
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- End Single Category -->
-                        <!-- Start Single Category -->
-                        <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    <a href="service-details.html">
-                                        <img src="images/product/10.jpg" alt="service images">
-                                    </a>
-                                </div>
-                                <div class="fr__hover__info">
-                                    <ul class="service__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fr__service__inner">
-                                    <h4><a href="product-details.html">voluptatem accusantium</a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Category -->
-                        <!-- Start Single Category -->
-                        <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    <a href="product-details.html">
-                                        <img src="images/product/11.jpg" alt="service images">
-                                    </a>
-                                </div>
-                                <div class="fr__hover__info">
-                                    <ul class="service__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fr__service__inner">
-                                    <h4><a href="product-details.html">service Dummy Name</a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Category -->
-                        <!-- Start Single Category -->
-                        <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
-                            <div class="category">
-                                <div class="ht__cat__thumb">
-                                    <a href="service-details.html">
-                                        <img src="images/product/12.jpg" alt="service images">
-                                    </a>
-                                </div>
-                                <div class="fr__hover__info">
-                                    <ul class="service__action">
-                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-
-                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-
-                                        <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="fr__service__inner">
-                                    <h4><a href="product-details.html">service Title Here </a></h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$30.3</li>
-                                        <li>$25.9</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Category -->
+                            <!-- End Single Category -->
+                        <?php } ?>
                     </div>
                 </div>
             </div>

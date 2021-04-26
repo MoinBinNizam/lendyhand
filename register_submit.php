@@ -13,6 +13,6 @@ require ('functions.inc.php');
         echo "email_present";
     }else{
         $added_on=date('Y-m-d h:i:s');
-        mysqli_query($con,"insert into users (name,email,mobile,password,added_on) values ('$name','$email','$mobile','$password','$added_on')");
+        mysqli_query($con,"INSERT INTO users (name,email,mobile,password,added_on) values ('$name','$email','$mobile','$password','$added_on')");
         echo "insert";
     }

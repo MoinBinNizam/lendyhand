@@ -33,14 +33,14 @@ $get_services = get_services($con,'',$cat_id);
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="htc__service__rightidebar">
                             <div class="htc__grid__top">
-                                <div class="htc__select__option">
+                                <!-- <div class="htc__select__option">
                                     <select class="ht__select">
                                         <option>Default softing</option>
                                         <option>Sort by popularity</option>
                                         <option>Sort by average rating</option>
                                         <option>Sort by newness</option>
                                     </select>
-                                </div>
+                                </div> -->
                             </div>
                             <!-- Start service View -->
                             <div class="row">
@@ -64,7 +64,7 @@ $get_services = get_services($con,'',$cat_id);
                                         <h4><a href="services.php?id=<?php echo $list['id'] ?>"><?php echo $list['name'] ?></a></h4>
                                         <ul class="fr__pro__prize">
                                             <li class="old__prize"><?php echo $list['unit_price'] ?></li>
-                                            <li><?php echo $list['total_price'] ?></li>
+                                            <!-- <li><?php echo $list['total_price'] ?></li> -->
                                         </ul>
                                     </div>
                                 </div>

@@ -3,13 +3,13 @@ require('connection.inc.php');
 require('functions.inc.php');
 require('add_to_cart.inc');
 
-$cat_res=mysqli_query($con,"select * from categories where status=1 order by categories asc ");
-$cat_array=array(); 
-while($row=mysqli_fetch_assoc($cat_res)){
-    $cat_array[]=$row;
-}
-$obj = new add_to_cart();
-$totalService= $obj->totalService();
+    $cat_res=mysqli_query($con,"select * from categories where status=1 order by categories asc ");
+    $cat_array=array();
+    while($row=mysqli_fetch_assoc($cat_res)){
+        $cat_array[]=$row;
+    }
+    $obj = new add_to_cart();
+    $totalService= $obj->totalService();
 
 ?>
 
@@ -41,30 +41,38 @@ $totalService= $obj->totalService();
     <div class="container">
         <div class="row">
             <div class="menumenu__container clearfix">
-                <div class="col-md-2 col-lg-2 col-sm-3 col-xs-5">
+                <div class="col-md-3 col-lg-2 col-sm-2 col-xs-3">
                     <div class="logo">
                             <a href="index.php"><img src="images/logo/1.png" alt="logo images"></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg -7 col-sm-5 col-xs-3">
+                <div class="col-md-6 col-lg -6 col-sm-2 col-xs-3">
                     <nav class="main__menu__nav hidden-xs hidden-sm">
                         <ul class="main__menu">
+                            <div class="dropdown">
+                                <button class="dropbtn">All Services
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <?php
+                                        foreach($cat_array as $list){
+                                            ?>
+                                            <li><a href="categories.php?id=<?php echo $list['id']?> ">
+                                                    <?php echo $list['categories'] ?> </a></li>
+                                            <?php
+                                        }
+                                        ?> </a>
 
-                                <?php
-                                foreach($cat_array as $list){
-                                ?>
-                                <li><a href="categories.php?id=<?php echo $list['id']?> ">
-                                <?php echo $list['categories'] ?> </a></li>
-                            <?php
-                                }
-                            ?>   
+                                </div>
+                            </div>
 							<li><a href="contacts.php">Contact</a></li>
+							<li><a href="service_provider.php">Become service provider</a></li>
                         </ul>
                     </nav>
                     <div class="mobile-menu clearfix visible-xs visible-sm">
                         <nav id="mobile_dropdown">
                             <ul>
-                                <li><a href="index.php">Home</a></li>  
+                                <li><a href="index.php">Home</a></li>
                                 <?php
                                 foreach($cat_array as $list){
                                 ?>
@@ -78,8 +86,11 @@ $totalService= $obj->totalService();
                         </nav>
                     </div>  
                 </div>
-                <div class="col-md-4 col-lg-3 col-sm-4 col-xs-4">
+                <div class="col-md-3 col-lg-4 col-sm-8 col-xs-6">
                     <div class="header__right">
+                        <div class="header__search search search__open">
+                            <a href="#"><i class="icon-magnifier icons"></i></a>
+                        </div>
                         <div class="header__account">
                             <?php
                                 if (isset($_SESSION['USER_LOGIN'])){
@@ -88,7 +99,6 @@ $totalService= $obj->totalService();
                                     echo '<a href="login.php">Login/Registration</a>';
                                 }
                             ?>
-
                         </div>
                         <div class="htc__shopping__cart">
                             <a class="cart__menu" href="#"><i class="icon-handbag icons"></i></a>
@@ -102,3 +112,25 @@ $totalService= $obj->totalService();
     </div>
 </div>
 </header>
+<div class="body__overlay"></div>
+<!-- Start Offset Wrapper -->
+<div class="offset__wrapper">
+    <!-- Start Search Popap -->
+    <div class="search__area">
+        <div class="container" >
+            <div class="row" >
+                <div class="col-md-12" >
+                    <div class="search__inner">
+                        <form action="search.php" method="get">
+                        <input placeholder="Search here... " type="text" name="str">
+                        <button type="submit"></button>
+                    </form>
+                    <div class="search__close__btn">
+                        <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- End Search Popap -->
