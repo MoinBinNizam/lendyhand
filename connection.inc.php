@@ -1,5 +1,7 @@
  <?php
+ //session start
     session_start();
+//DB connection
     $con= mysqli_connect(
         "localhost",
         "root",

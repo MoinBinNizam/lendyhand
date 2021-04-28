@@ -2,10 +2,28 @@
 ob_start();
 require('top.php');
 
-if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
-    header('location:my_order.php');
+if (isset($_SESSION['SERVICE_PROVIDER_LOGIN']) && $_SESSION['SERVICE_PROVIDER_LOGIN']=='yes'){
+    header('location:service_provider/add_services.php');
     die();
 }
+$msg = '';
+  if(isset ($_POST['submit'])){
+    $login_email = get_safe_value($con, $_POST['login_email']);
+    $login_password = get_safe_value($con, $_POST['login_password']);
+    $sql = "SELECT * from service_provider where email = '$login_email' and password = '$login_password'";
+    $result = mysqli_query($con, $sql);
+    $count= mysqli_num_rows($result);
+    if ($count >0){
+      $_SESSION['SERVICE_PROVIDER_LOGIN']='yes';
+      $_SESSION['SERVICE_PROVIDER_EMAIL']=$login_email;
+      //header('location:service_provider_profile.php');
+      echo "Logged in";
+ 
+      die();
+    }else{
+      $msg = "Please enter the correct login details again";
+    }
+  }
 
 //?>
     <!-- Start Bradcaump area -->
@@ -59,11 +77,14 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
 
                                 <div class="contact-btn">
                                     <!-- <input type="submit" name="login" class="fv-btn" id="login"> -->
-                                    <button type="submit" name="submit" class="fv-btn">Sign in</button>
+                                    <button type="submit" name="submit" class="fv-btn">Log in</button>
               
                                     <!-- <button type="button" class="fv-btn" onclick="user_login()">Login</button> -->
                                 </div>
                             </form>
+                            <div class="field_error"> 
+                            <?php echo $msg ?>
+                        </div>
                             <div class="form-output login_msg">
                                 <p class="form-messege"></p>
                             </div>
@@ -84,7 +105,7 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
                             <form method="POST" action="service_provider_profile.php" onsubmit="return validation()">
                             <div class="single-contact-form">
                             <div class="dropdown">
-                                <button class="dropbtn">All Services
+                                <button class="dropbtn">Select Work Location
                                     <i class="fa fa-caret-down"></i>
                                 </button>
                                 <div class="dropdown-content">
@@ -132,14 +153,7 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN']=='yes'){
                                 </div>
                                 <div class="single-contact-form">
                                     <div class="contact-box name">
-                                        <input type="text" name="work_location" id="work_location" placeholder="Your Work Location*" >
-                                    
-                                    </div>
-                                    <span class="field_error" id="work_location_error"></span>
-                                </div>
-                                <div class="single-contact-form">
-                                    <div class="contact-box name">
-                                        <label for="categories" class=" form-control-label">NID Photo
+                                        <label for="categories" class=" form-control-label">Photo of Your NID
                                         </label>
                                         <input type="file" name="nid" id="nid" class="form-control">
                                     </div>

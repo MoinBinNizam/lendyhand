@@ -36,7 +36,7 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
       
      
    }else{
-      header('location:services.php ');
+      header('location:service_provider/add_services.php ');
       die();
    } 
 }
@@ -66,11 +66,11 @@ if (isset ($_POST['submit'])){
       $msg="Service already exist";
    }
 }
-
+$img_msg='';
 if($_FILES['img']['type'] !='img/png' &&
    $_FILES['img']['type'] !='img/jpg' && 
    $_FILES['img']['type'] !='img/jpeg'){
-      echo "Please select only png, jpg, jpeg image formate";
+      $img_msg= "Please select only png, jpg, jpeg image formate";
    
    }
 
@@ -100,7 +100,7 @@ if($msg ==''){
             values ('$categories_id','$name','$unit_price','$total_price','$qty','$short_desc','$descpt',
             '$meta_title','$meta_desc','1','$img')");
          }
-   header('location:services.php ');
+   header('location:admin/manage_services.php ');
    die();
    }
 }
@@ -176,9 +176,12 @@ if($msg ==''){
                         <label for="categories" class=" form-control-label">Image
                         </label>
                         <input type="file" name="img"  class="form-control" <?php $image_required; ?> >
+                        <div class="field_error"> 
+                           <?php echo $img_msg ?>
+                        </div>
                      </div>
-                  
-
+                     
+      
                      <button id="payment-button" name="submit" type="submit" class="btn btn-lg btn-info btn-block">
                         <span id="payment-button-amount">Submit</span>
                      </button>

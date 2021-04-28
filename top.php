@@ -58,11 +58,9 @@ require('add_to_cart.inc');
                                         foreach($cat_array as $list){
                                             ?>
                                             <li><a href="categories.php?id=<?php echo $list['id']?> ">
-                                                    <?php echo $list['categories'] ?> </a></li>
-                                            <?php
-                                        }
-                                        ?> </a>
-
+                                            <?php echo $list['categories'] ?></a></li>
+                                            <?php } ?> 
+                                        </a>
                                 </div>
                             </div>
 							<li><a href="contacts.php">Contact</a></li>
@@ -73,14 +71,10 @@ require('add_to_cart.inc');
                         <nav id="mobile_dropdown">
                             <ul>
                                 <li><a href="index.php">Home</a></li>
-                                <?php
-                                foreach($cat_array as $list){
-                                ?>
-								<li><a href="categories.php?id=<?php echo $list['id']?> ">
-                                <?php echo $list['categories'] ?> </a></li>
-                            <?php
-                                }
-                            ?>
+                                <?php foreach($cat_array as $list){ ?>
+								<li><a href="categories.php?id=<?php echo $list['id']?>">
+                                <?php echo $list['categories']?> </a></li>
+                            <?php } ?>
 							<li><a href="contacts.php">Contact</a></li>
                             </ul>
                         </nav>
