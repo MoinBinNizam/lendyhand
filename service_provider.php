@@ -2,10 +2,10 @@
 ob_start();
 require('top.php');
 
-if (isset($_SESSION['SERVICE_PROVIDER_LOGIN']) && $_SESSION['SERVICE_PROVIDER_LOGIN']=='yes'){
-    header('location:service_provider/add_services.php');
-    die();
-}
+// if (isset($_SESSION['SERVICE_PROVIDER_LOGIN']) && $_SESSION['SERVICE_PROVIDER_LOGIN']=='yes'){
+//     header('location:service_provider/manage_service.php');
+//     die();
+// }
 $msg = '';
   if(isset ($_POST['submit'])){
     $login_email = get_safe_value($con, $_POST['login_email']);
@@ -16,8 +16,8 @@ $msg = '';
     if ($count >0){
       $_SESSION['SERVICE_PROVIDER_LOGIN']='yes';
       $_SESSION['SERVICE_PROVIDER_EMAIL']=$login_email;
-      //header('location:service_provider_profile.php');
-      echo "Logged in";
+      header('location:service_provider/manage_services.php');
+      echo "Logged in as service provider";
  
       die();
     }else{
@@ -51,7 +51,6 @@ $msg = '';
                 <div class="headline">
                     <h1>Become A Proud Service Provider</h1>
                     <h4>It's simple!</h4>
-
                 </div>
                 <div class="col-md-6">
                     <div class="contact-form-wrap mt--60">
@@ -74,7 +73,6 @@ $msg = '';
                                     </div>
                                     <span class="field_error" id="login_password_error"></span>
                                 </div>
-
                                 <div class="contact-btn">
                                     <!-- <input type="submit" name="login" class="fv-btn" id="login"> -->
                                     <button type="submit" name="submit" class="fv-btn">Log in</button>
@@ -90,10 +88,7 @@ $msg = '';
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
                 <div class="col-md-6">
                     <div class="contact-form-wrap mt--60">
                         <div class="col-xs-12">

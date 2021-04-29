@@ -85,7 +85,7 @@ ob_end_flush();
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="buttons-cart--inner">
                                     <div class="buttons-cart">
-                                        <a href="<?php echo SITE_PATH ?>">Continue Shopping</a>
+                                        <a href="<?php echo SITE_PATH ?>">Continue Choosing Services</a>
                                     </div>
                                     <div class="buttons-cart checkout--btn">
 

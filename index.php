@@ -87,15 +87,15 @@ require('top.php');
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="section__title--2 text-center">
-                            <h2 class="title__line">Best Seller</h2>
-                            <p>People takes these services often. Get on demand home services by one click instantly. Save your valuable time </p>
+                            <h2 class="title__line">Best Seller Services</h2>
+                            <p>People often takes these services. Get on demand home services by one click instantly. Save your valuable time </p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="service__list clearfix mt--30">
                         <?php
-                        $get_services = get_services($con,4);
+                        $get_services = get_services($con,8);
                         foreach($get_services as $list){
                             ?>
                             <!-- Start Single Category -->
